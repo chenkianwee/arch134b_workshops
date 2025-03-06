@@ -1,4 +1,4 @@
-# Visualize Climate Data
+# Climate Analysis Part 2: Visualize Climate Data
 
 ## Download the visualization template
 
