@@ -1,0 +1,24 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: docs/intro
+parts:
+- caption: Tutorials
+  numbered: true
+  chapters:
+  - file: docs/01_climate
+    sections:
+    - file: docs/01_1_climate_p1
+    - file: docs/01_2_climate_p2
+  - file: docs/02_shoebox
+    sections:
+    - file: docs/02_1_shoebox_p1
+    - file: docs/02_2_shoebox_p2
+    - file: docs/02_3_shoebox_p3
+    - file: docs/02_4_shoebox_p4
+    - file: docs/02_5_shoebox_p5
+  - file: docs/03_cmf
+    sections:
+    - file: docs/03_1_cmf_p1
+    - file: docs/03_2_cmf_p2
