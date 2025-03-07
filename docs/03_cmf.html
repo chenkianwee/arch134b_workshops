@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Arch134b workshops &#8212; Arch134b workshops</title>
+    <title>3. Designing for Thermal Comfort &#8212; Arch134b workshops</title>
   
   
   
@@ -60,10 +60,11 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/intro';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/03_cmf';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="1. Climate Analysis" href="01_climate.html" />
+    <link rel="next" title="3.1. Thermal Comfort Model Part 1: Predicting Thermal Comfort" href="03_1_cmf_p1.html" />
+    <link rel="prev" title="2.7. Shoebox Model-Part 5: Visualization of Results" href="02_5_shoebox_p5.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -115,8 +116,6 @@
       
       
       
-        
-      
       <dialog id="pst-primary-sidebar-modal"></dialog>
       <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
@@ -136,7 +135,7 @@
     
   
 
-<a class="navbar-brand logo" href="#">
+<a class="navbar-brand logo" href="intro.html">
   
   
   
@@ -157,14 +156,14 @@
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1 current active">
-                <a class="reference internal" href="#">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
                     Arch134b workshops
                 </a>
             </li>
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Tutorials</span></p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="01_climate.html">1. Climate Analysis</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="01_1_climate_p1.html">1.3. Climate Analysis Part 1: Visualizing Weather Data with CBE Clima Tool</a></li>
 <li class="toctree-l2"><a class="reference internal" href="01_2_climate_p2.html">1.4. Climate Analysis Part 2: Visualize Climate Data</a></li>
@@ -178,7 +177,7 @@
 <li class="toctree-l2"><a class="reference internal" href="02_5_shoebox_p5.html">2.7. Shoebox Model-Part 5: Visualization of Results</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="03_cmf.html">3. Designing for Thermal Comfort</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">3. Designing for Thermal Comfort</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="03_1_cmf_p1.html">3.1. Thermal Comfort Model Part 1: Predicting Thermal Comfort</a></li>
 <li class="toctree-l2"><a class="reference internal" href="03_2_cmf_p2.html">3.2. Thermal Comfort Model Part 2: Visualizing Thermal Comfort and Energy Reduction</a></li>
 </ul>
@@ -259,7 +258,7 @@
       
       
       
-      <li><a href="https://github.com/chenkianwee/pbad/issues/new?title=Issue%20on%20page%20%2Fdocs/intro.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/chenkianwee/pbad/issues/new?title=Issue%20on%20page%20%2Fdocs/03_cmf.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -289,7 +288,7 @@
       
       
       
-      <li><a href="../_sources/docs/intro.md" target="_blank"
+      <li><a href="../_sources/docs/03_cmf.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -363,7 +362,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Arch134b workshops</h1>
+    <h1>Designing for Thermal Comfort</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -377,8 +376,9 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="arch134b-workshops">
-<h1>Arch134b workshops<a class="headerlink" href="#arch134b-workshops" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="designing-for-thermal-comfort">
+<h1><span class="section-number">3. </span>Designing for Thermal Comfort<a class="headerlink" href="#designing-for-thermal-comfort" title="Link to this heading">#</a></h1>
+<p>A building needs to provide thermal comfort to its occupants. The building envelope shields occupants from unwanted heat and passively facilitate the addition of required heat and removal of unwanted heat. The HVAC system then actively add or remove heat to maintain spaces at a thermally comfortable condition for the occupants. How much heat needs to be removed or added is dependent on what thermal conditions are comfortable for the occupants. A thermal comfort model is used to help designers determine the conditions. The 6 main factors used in thermal comfort models are air temperature, mean radiant temperature (MRT), relative humidity, air movement, metabolic rate and clothing. We will be using the CBE thermal comfort tool to decide what are the comfortable thermal conditions and use it in simulation.</p>
 <div class="toctree-wrapper compound">
 </div>
 </section>
@@ -413,12 +413,21 @@
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="02_5_shoebox_p5.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">2.7. </span>Shoebox Model-Part 5: Visualization of Results</p>
+      </div>
+    </a>
     <a class="right-next"
-       href="01_climate.html"
+       href="03_1_cmf_p1.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">1. </span>Climate Analysis</p>
+        <p class="prev-next-title"><span class="section-number">3.1. </span>Thermal Comfort Model Part 1: Predicting Thermal Comfort</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

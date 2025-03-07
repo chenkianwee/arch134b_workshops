@@ -177,6 +177,11 @@
 <li class="toctree-l2"><a class="reference internal" href="02_5_shoebox_p5.html">2.7. Shoebox Model-Part 5: Visualization of Results</a></li>
 </ul>
 </details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="03_cmf.html">3. Designing for Thermal Comfort</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="03_1_cmf_p1.html">3.1. Thermal Comfort Model Part 1: Predicting Thermal Comfort</a></li>
+<li class="toctree-l2"><a class="reference internal" href="03_2_cmf_p2.html">3.2. Thermal Comfort Model Part 2: Visualizing Thermal Comfort and Energy Reduction</a></li>
+</ul>
+</details></li>
 </ul>
 
     </div>
@@ -421,37 +426,35 @@
 </ol>
 <a class="reference internal image-reference" href="../_images/shoe2_9.png"><img alt="../_images/shoe2_9.png" class="align-center" src="../_images/shoe2_9.png" style="width: 100%;" /></a>
 <p><br/><br/>
-3. Select the slab object. Left click on the Add property set… parameter. Press O on the keyboard and choose ‘Osmod Thermal Resistance’. Key in the thermal resistance value for the slab.</p>
+3. Select the slab object. Left click on the Add property set… parameter. Press O on the keyboard and choose ‘Osmod Thermal Resistance’.</p>
 <a class="reference internal image-reference" href="../_images/shoe2_10.gif"><img alt="../_images/shoe2_10.gif" class="align-center" src="../_images/shoe2_10.gif" style="width: 100%;" /></a>
-<p><br/><br/>
-4. Enter the following values for the slab and walls.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Floor</span> <span class="n">slab</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">xx</span>
-<span class="n">Roof</span> <span class="n">slab</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">xx</span>
-<span class="n">Walls</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">xx</span>
-</pre></div>
-</div>
-<ol class="arabic simple" start="5">
-<li><p>Select the window object. Left click on the Add property set… parameter. Press O on the keyboard and choose ‘Osmod Ufactor’. Key in the U-value for the window.</p></li>
+<p><br/><br/></p>
+<!-- 4. Enter the following values for the slab and walls.
+```
+Floor slab = x.xx
+Roof slab = x.xx
+Walls = x.xx
+``` -->
+<ol class="arabic simple" start="4">
+<li><p>Select the window object. Left click on the Add property set… parameter. Press O on the keyboard and choose ‘Osmod Ufactor’.</p></li>
 </ol>
 <a class="reference internal image-reference" href="../_images/shoe2_11.gif"><img alt="../_images/shoe2_11.gif" class="align-center" src="../_images/shoe2_11.gif" style="width: 100%;" /></a>
-<p><br/><br/>
-6. Enter the following values for the window.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Window</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">xx</span>
-</pre></div>
-</div>
-<ol class="arabic simple" start="7">
+<p><br/><br/></p>
+<!-- 6. Enter the following values for the window.
+```
+Window = x.xx
+``` -->
+<ol class="arabic simple" start="5">
 <li><p>Select the space object. Left click on the Add property set… parameter. Press O on the keyboard and choose ‘Osmod Space’. Key in the values for the space.</p></li>
 </ol>
 <a class="reference internal image-reference" href="../_images/shoe2_12.gif"><img alt="../_images/shoe2_12.gif" class="align-center" src="../_images/shoe2_12.gif" style="width: 100%;" /></a>
-<p><br/><br/>
-8. Key in the following values</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">OutdoorAirFlowperPerson</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">xx</span>
-<span class="n">OutdoorAirFlowperFloorArea</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">xx</span>
-<span class="n">FloorAreaPerPerson</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">xx</span>
-<span class="n">LightingPowerPerFloorArea</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">xx</span>
-<span class="n">ElectricEquipmentPowerPerFloorArea</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">xx</span>
-<span class="n">CoolingSetpointTemperature</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">xx</span>
-<span class="n">HeatingSetpointTemperature</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">xx</span>
+<p><br/><br/></p>
+<ol class="arabic simple" start="6">
+<li><p>Key in the following values</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">FloorAreaPerPerson</span> <span class="o">=</span> <span class="mf">18.6</span>
+<span class="n">LightingPowerPerFloorArea</span> <span class="o">=</span> <span class="mf">6.18</span>
+<span class="n">ElectricEquipmentPowerPerFloorArea</span> <span class="o">=</span> <span class="mf">6.78</span>
 </pre></div>
 </div>
 </section>

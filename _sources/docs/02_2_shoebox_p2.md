@@ -52,49 +52,49 @@
 ## Add custom thermal psets to the objects
 
 1. Make sure you have added the CustomPset.csv file into the FreeCAD folder. Refer to [Getting Started Steps 7-8](02_shoebox.md#freecad) for instructions.
+
 2. Click on Manage IFC Properties ... At the window choose the Order by to IFC type.
 ```{image} ../_static/shoebox2/shoe2_9.png
 :width: 100%
 :align: center
 ```
 <br/><br/>
-3. Select the slab object. Left click on the Add property set... parameter. Press O on the keyboard and choose 'Osmod Thermal Resistance'. Key in the thermal resistance value for the slab.
+3. Select the slab object. Left click on the Add property set... parameter. Press O on the keyboard and choose 'Osmod Thermal Resistance'.
 ```{image} ../_static/shoebox2/shoe2_10.gif
 :width: 100%
 :align: center
 ```
 <br/><br/>
-4. Enter the following values for the slab and walls.
+<!-- 4. Enter the following values for the slab and walls.
 ```
 Floor slab = x.xx
 Roof slab = x.xx
 Walls = x.xx
-```
-5. Select the window object. Left click on the Add property set... parameter. Press O on the keyboard and choose 'Osmod Ufactor'. Key in the U-value for the window.
+``` -->
+
+4. Select the window object. Left click on the Add property set... parameter. Press O on the keyboard and choose 'Osmod Ufactor'.
 ```{image} ../_static/shoebox2/shoe2_11.gif
 :width: 100%
 :align: center
 ```
 <br/><br/>
-6. Enter the following values for the window.
+<!-- 6. Enter the following values for the window.
 ```
 Window = x.xx
-```
-7. Select the space object. Left click on the Add property set... parameter. Press O on the keyboard and choose 'Osmod Space'. Key in the values for the space.
+``` -->
+
+5. Select the space object. Left click on the Add property set... parameter. Press O on the keyboard and choose 'Osmod Space'. Key in the values for the space.
 ```{image} ../_static/shoebox2/shoe2_12.gif
 :width: 100%
 :align: center
 ```
 <br/><br/>
-8. Key in the following values
+
+6. Key in the following values
 ```
-OutdoorAirFlowperPerson = x.xx
-OutdoorAirFlowperFloorArea = x.xx
-FloorAreaPerPerson = x.xx
-LightingPowerPerFloorArea = x.xx
-ElectricEquipmentPowerPerFloorArea = x.xx
-CoolingSetpointTemperature = x.xx
-HeatingSetpointTemperature = x.xx
+FloorAreaPerPerson = 18.6
+LightingPowerPerFloorArea = 6.18
+ElectricEquipmentPowerPerFloorArea = 6.78
 ```
 
 ## Export to IFC
