@@ -182,6 +182,10 @@
 <li class="toctree-l2"><a class="reference internal" href="03_2_cmf_p2.html">3.2. Thermal Comfort Model Part 2: Visualizing Thermal Comfort and Energy Reduction</a></li>
 </ul>
 </details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="04_psvdgn.html">4. Evaluating Passive HVAC Design Strategies</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="04_1_psvdgn_p1.html">4.1. Evaluating Passive HVAC Design Strategies Part 1: Designing Windows and Shade</a></li>
+</ul>
+</details></li>
 </ul>
 
     </div>
@@ -394,11 +398,16 @@
 <section id="convert-ifc-to-openstudio-model">
 <h2><span class="section-number">2.5.1. </span>Convert IFC to OpenStudio Model<a class="headerlink" href="#convert-ifc-to-openstudio-model" title="Link to this heading">#</a></h2>
 <ol class="arabic simple">
-<li><p>Convert the IFC model to .osm file using the <a href="https://github.com/chenkianwee/ifc2osmod" target="_blank">ifc2osmod python library</a>.</p></li>
+<li><p>In FreeCAD go to the ArchEng Workbench. Make sure you have installed the workbench by following the <a class="reference internal" href="02_shoebox.html#install-the-architecture-engineering-workbench"><span class="std std-ref">getting started guide</span></a></p></li>
+<li><p>Click on the ifc2osmod button. Specify your ifc file and where you want to store your osmod file. Then click on ‘Convert to osmod’.</p></li>
 </ol>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ifcarch2osmod</span> <span class="o">-</span><span class="n">i</span> <span class="n">ifc</span><span class="o">/</span><span class="n">shoebox</span><span class="o">.</span><span class="n">ifc</span> <span class="o">-</span><span class="n">o</span> <span class="n">res</span><span class="o">/</span><span class="n">osmod</span><span class="o">/</span><span class="n">shoebox</span><span class="o">.</span><span class="n">osm</span>
-</pre></div>
-</div>
+<a class="reference internal image-reference" href="../_images/shoe3_22.png"><img alt="../_images/shoe3_22.png" class="align-center" src="../_images/shoe3_22.png" style="width: 100%;" /></a>
+<p><br/><br/></p>
+<ol class="arabic simple" start="3">
+<li><p>Once the conversion is done. A window will pop up telling you where is the osmod file.</p></li>
+</ol>
+<a class="reference internal image-reference" href="../_images/shoe3_23.png"><img alt="../_images/shoe3_23.png" class="align-center" src="../_images/shoe3_23.png" style="width: 100%;" /></a>
+<p><br/><br/></p>
 </section>
 <section id="specify-the-weatherfile">
 <h2><span class="section-number">2.5.2. </span>Specify the weatherfile<a class="headerlink" href="#specify-the-weatherfile" title="Link to this heading">#</a></h2>
