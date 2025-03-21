@@ -64,7 +64,7 @@
 :width: 100%
 :align: center
 ```
-<br/><br/> 
+<br/><br/>
 
 10. Select Level. The shade will be added into the Level group. Save your model.
 ```{image} ../_static/psvdgn1/psvdgn1_10.png

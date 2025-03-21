@@ -122,4 +122,4 @@ A shoebox model is a simplified, usually rectangular building used for pre-desig
 ## OpenStudio Application for simulation and GIMP and Inkscape for visualization
 1. Install OpenStudio Application==1.8.0 <a href="https://github.com/openstudiocoalition/OpenStudioApplication/releases/tag/v1.8.0" target="_blank">here</a>. Follow the instructions here according to your OS <a href="https://openstudiocoalition.org/getting_started/getting_started/" target="_blank">here</a>
 
-2. Install Inkscape==1.4 <a href="https://inkscape.org/release/inkscape-1.4/" target="_blank">here</a> for doing vector illustration and Gimp==2.10.38 <a href="https://www.gimp.org/downloads/" target="_blank">here</a> for working with raster images.
+2. Install Inkscape==1.4 <a href="https://inkscape.org/release/inkscape-1.4/" target="_blank">here</a> for doing vector illustration and Gimp==3.0.0 <a href="https://www.gimp.org/downloads/" target="_blank">here</a> for working with raster images.
