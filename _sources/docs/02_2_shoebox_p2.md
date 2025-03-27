@@ -59,29 +59,29 @@
 :align: center
 ```
 <br/><br/>
-3. Select the slab object. Left click on the Add property set... parameter. Press O on the keyboard and choose 'Osmod Thermal Resistance'.
+3. Select the slab object. Left click on the Add property set... parameter. Press O on the keyboard and choose 'Osmod Thermal Resistance'. Do this for the roof, floor and walls.
+- Enter the following values for the slab and walls.
+```
+Floor slab = 0.00
+Roof slab = 0.00
+Walls = 0.00
+```
 ```{image} ../_static/shoebox2/shoe2_10.gif
 :width: 100%
 :align: center
 ```
 <br/><br/>
-<!-- 4. Enter the following values for the slab and walls.
-```
-Floor slab = x.xx
-Roof slab = x.xx
-Walls = x.xx
-``` -->
 
 4. Select the window object. Left click on the Add property set... parameter. Press O on the keyboard and choose 'Osmod Ufactor'.
+- Enter the following values for the window.
+```
+Window = 0.00
+```
 ```{image} ../_static/shoebox2/shoe2_11.gif
 :width: 100%
 :align: center
 ```
 <br/><br/>
-<!-- 6. Enter the following values for the window.
-```
-Window = x.xx
-``` -->
 
 5. Select the space object. Left click on the Add property set... parameter. Press O on the keyboard and choose 'Osmod Space'. Key in the values for the space.
 ```{image} ../_static/shoebox2/shoe2_12.gif
