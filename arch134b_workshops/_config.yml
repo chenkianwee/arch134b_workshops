@@ -17,12 +17,12 @@ latex:
     targetname: book.tex
 
 # Add a bibtex file so that we can create citations
-bibtex_bibfiles:
-  - docs/references.bib
+# bibtex_bibfiles:
+#   - docs/references.bib
 
 sphinx:
   config:
-    bibtex_reference_style: author_year
+    # bibtex_reference_style: author_year
     myst_heading_anchors: 3
     
 # Information about where the book exists on the web

@@ -13,73 +13,78 @@
 :align: center
 ```
 <br/><br/>
-3. Click on the line tool and draw a line on the edge of the slab. If the appropriate snaps are on your cursor will snap to the edge points of your slab.
-```{image} ../_static/shoebox1/shoe1_3.png
+
+3. Click on the rectangle tool and draw a rectangle on the slab. If the appropriate snaps are on your cursor will snap to the edge points of your slab. 
+```{image} ../_static/shoebox1/shoe1_20.png
 :width: 100%
 :align: center
 ```
 <br/><br/>
-4. Select the line and click on the wall icon to turn the line into a wall.
-```{image} ../_static/shoebox1/shoe1_4.png
+
+4. Select the rectangle. And change the 'Make Face' parameter to 'false'
+```{image} ../_static/shoebox1/shoe1_21.png
 :width: 100%
 :align: center
 ```
 <br/><br/>
-5. You can see that the wall is sitting outside of the slab. Select the wall and go to the data view. Go to Align parameter and choose Right/Left (it depends on the direction that you have drawn your line) and press enter. The wall will now sit nicely on the slab. 
-```{image} ../_static/shoebox1/shoe1_5.png
+
+5. Select the rectangle and click on the 'Wall' icon.
+```{image} ../_static/shoebox1/shoe1_22.png
 :width: 100%
 :align: center
 ```
 <br/><br/>
-6. Go to the Height parameter and change the height to 5000mm.
-```{image} ../_static/shoebox1/shoe1_6.png
+
+6. Select the created 'Wall'. Change the 'Align' parameter to 'Right' so that the wall are within the slab.
+```{image} ../_static/shoebox1/shoe1_23.png
 :width: 100%
 :align: center
 ```
 <br/><br/>
-7. Draw the next wall. Repeat steps 3-6. 
-```{image} ../_static/shoebox1/shoe1_7.png
+
+7. Go to the Height parameter and change the height to 5000mm.
+```{image} ../_static/shoebox1/shoe1_24.png
 :width: 100%
 :align: center
 ```
 <br/><br/>
-8. Continue steps 3-6 until you drew all 4 walls.
-```{image} ../_static/shoebox1/shoe1_8.gif
-:width: 60%
-:align: center
-```
-<br/><br/>
-9. Now draw the roof slab. Draw a rectangle on top of the four walls. Make sure your working plane is Top.
+
+8. Now draw the roof slab. Draw a rectangle on top of the four walls. Make sure your working plane is Top.
 ```{image} ../_static/shoebox1/shoe1_9.png
 :width: 100%
 :align: center
 ```
 <br/><br/>
-10. Click on the slab icon and make the rectangle a slab.
+
+9. Click on the slab icon and make the rectangle a slab.
 ```{image} ../_static/shoebox1/shoe1_10.png
 :width: 100%
 :align: center
 ```
 <br/><br/>
-11. Select the slab. Change the Predefined Type to Roof, and change the Normal Z direction to 1.00
+
+10. Select the slab. Change the Predefined Type to Roof, and change the Normal Z direction to 1.00
 ```{image} ../_static/shoebox1/shoe1_11.png
 :width: 100%
 :align: center
 ```
 <br/><br/>
-12. Create a window on the front wall. Make sure your view is adjusted to Front. Click on the window icon and place your window on the lower left corner.
+
+11. Create a window on the front wall. Make sure your view is adjusted to Front. Click on the window icon and place your window on the lower left corner.
 ```{image} ../_static/shoebox1/shoe1_12.gif
 :width: 100%
 :align: center
 ```
 <br/><br/>
-13. Select the window and adjust the Height and Width of the window to 1500mm.
+
+12. Select the window and adjust the Height and Width of the window to 1500mm.
 ```{image} ../_static/shoebox1/shoe1_13.png
 :width: 100%
 :align: center
 ```
 <br/><br/>
-14. Select the window, change the position x and z of the window to 1750.
+
+13. Select the window, change the position x and z of the window to 1750.
 ```{image} ../_static/shoebox1/shoe1_14.png
 :width: 100%
 :align: center

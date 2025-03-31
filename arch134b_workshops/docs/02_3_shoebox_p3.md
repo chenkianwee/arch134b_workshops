@@ -1,10 +1,22 @@
 # Shoebox Model-Part 3: OpenStudio Model Schedules
 
 ## Convert IFC to OpenStudio Model
-1. Convert the IFC model to .osm file using the <a href="https://github.com/chenkianwee/ifc2osmod" target="_blank">ifc2osmod python library</a>.
+1. In FreeCAD go to the ArchEng Workbench. Make sure you have installed the workbench by following the [getting started guide](02_shoebox.md#install-the-architecture-engineering-workbench)
+
+2. Click on the ifc2osmod button. Specify your ifc file and where you want to store your osmod file. Then click on 'Convert to osmod'.
+```{image} ../_static/shoebox3/shoe3_22.png
+:width: 100%
+:align: center
 ```
-ifcarch2osmod -i ifc/shoebox.ifc -o res/osmod/shoebox.osm
+<br/><br/>
+
+3. Once the conversion is done. A window will pop up telling you where is the osmod file.
+```{image} ../_static/shoebox3/shoe3_23.png
+:width: 100%
+:align: center
 ```
+<br/><br/>
+
 
 ##  Specify the weatherfile
 1. Open the shoebox.osm file with openstudio. Go to File -> Open and choose shoebox.osm.

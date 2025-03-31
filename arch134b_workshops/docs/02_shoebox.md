@@ -51,7 +51,75 @@ A shoebox model is a simplified, usually rectangular building used for pre-desig
 ```
 <br/><br/>
 
+### Install the Architecture Engineering Workbench
+1. In FreeCAD go to Edit -> Preferences.
+```{image} ../_static/start/start8.png
+:width: 100%
+:align: center
+```
+<br/><br/>
+
+2. In the preferences window select Addon Manager -> Addon manager options. Under the Custom repositories click on the '+' sign. Fill in the following details and press apply:
+```
+- Repository URL: https://github.com/chenkianwee/ArchEng_Workbench
+- Branch: master
+```
+```{image} ../_static/start/start9.png
+:width: 100%
+:align: center
+```
+<br/><br/>
+
+3. Go to Tools -> Addon manager.
+```{image} ../_static/start/start10.png
+:width: 100%
+:align: center
+```
+<br/><br/>
+
+4. In the Addon manager window. For the Filter parameter, change it to Workbench, Not installed. In the search bar search for 'archeng'. You should be able to see the ArchEng Workbench.
+```{image} ../_static/start/start11.png
+:width: 100%
+:align: center
+```
+<br/><br/>
+
+5. Install the workbench. After installation you will be asked to restart FreeCAD.
+```{image} ../_static/start/start12.png
+:width: 100%
+:align: center
+```
+<br/><br/>
+
+6. Once you restart FreeCAD. Go to the workbench dropdown list and choose ArchEng workbench. Then click on the InstallDependencies button.
+```{image} ../_static/start/start13.png
+:width: 100%
+:align: center
+```
+<br/><br/>
+
+7. You will be asked to install the dependencies. Click on Yes.
+```{image} ../_static/start/start14.png
+:width: 100%
+:align: center
+```
+<br/><br/>
+
+8. This will take some time. Wait for ~5mins, depending on the speed of your computer and internet connection (you must be connected to the internet). Once done, a message will pop up telling you to restart FreeCAD. Manually close FreeCAD and open it again.
+```{image} ../_static/start/start15.png
+:width: 100%
+:align: center
+```
+<br/><br/>
+
+9. Once restarted, go to the ArchEng workbench and click on ifc2osmod. You should see a window pop up. You have successfully installed the workbench. Close the window and move on to next section of this guide.
+```{image} ../_static/start/start16.png
+:width: 100%
+:align: center
+```
+<br/><br/>
+
 ## OpenStudio Application for simulation and GIMP and Inkscape for visualization
 1. Install OpenStudio Application==1.8.0 <a href="https://github.com/openstudiocoalition/OpenStudioApplication/releases/tag/v1.8.0" target="_blank">here</a>. Follow the instructions here according to your OS <a href="https://openstudiocoalition.org/getting_started/getting_started/" target="_blank">here</a>
 
-2. Install Inkscape==1.4 <a href="https://inkscape.org/release/inkscape-1.4/" target="_blank">here</a> for doing vector illustration and Gimp==2.10.38 <a href="https://www.gimp.org/downloads/" target="_blank">here</a> for working with raster images.
+2. Install Inkscape==1.4 <a href="https://inkscape.org/release/inkscape-1.4/" target="_blank">here</a> for doing vector illustration and Gimp==3.0.0 <a href="https://www.gimp.org/downloads/" target="_blank">here</a> for working with raster images.
