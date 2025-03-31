@@ -63,6 +63,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'docs/06_1_spec_hvac_p1';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="6.2. Specifying Packaged HVAC Systems Part 1" href="06_2_spec_hvac_p2.html" />
     <link rel="prev" title="6. Specifying Packaged HVAC Systems" href="06_spec_hvac.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -193,6 +194,7 @@
 </details></li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="06_spec_hvac.html">6. Specifying Packaged HVAC Systems</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">6.1. Specifying Packaged HVAC Systems Part 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="06_2_spec_hvac_p2.html">6.2. Specifying Packaged HVAC Systems Part 1</a></li>
 </ul>
 </details></li>
 </ul>
@@ -364,7 +366,9 @@
 <button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
 </button>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -380,6 +384,16 @@
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#get-the-required-capacity">6.1.1. Get the required capacity</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#window-units">6.1.2. Window units?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#central-air-conditioning-heat-pump">6.1.3. Central air conditioning heat pump</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -391,6 +405,92 @@
                   
   <section class="tex2jax_ignore mathjax_ignore" id="specifying-packaged-hvac-systems-part-1">
 <h1><span class="section-number">6.1. </span>Specifying Packaged HVAC Systems Part 1<a class="headerlink" href="#specifying-packaged-hvac-systems-part-1" title="Link to this heading">#</a></h1>
+<section id="get-the-required-capacity">
+<h2><span class="section-number">6.1.1. </span>Get the required capacity<a class="headerlink" href="#get-the-required-capacity" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Open your shoebox model from the <a class="reference internal" href="02_shoebox.html#shoebox-model"><span class="std std-ref">previous workshop</span></a> in Openstudio.</p></li>
+</ol>
+<a class="reference internal image-reference" href="../_images/spec1_1.png"><img alt="../_images/spec1_1.png" class="align-center" src="../_images/spec1_1.png" style="width: 100%;" /></a>
+<p><br/><br/></p>
+<ol class="arabic simple" start="2">
+<li><p>Run the simulation.</p></li>
+</ol>
+<a class="reference internal image-reference" href="../_images/spec1_2.png"><img alt="../_images/spec1_2.png" class="align-center" src="../_images/spec1_2.png" style="width: 100%;" /></a>
+<p><br/><br/></p>
+<ol class="arabic simple" start="3">
+<li><p>Go to the ‘District Cooling Peak Demand’ and ‘District Heating Water Peak Demain’. Identify the highest consumption. According to the graph below, the peak demand for cooling is 3.9kW and heating is 9kW.</p></li>
+</ol>
+<a class="reference internal image-reference" href="../_images/spec1_3.png"><img alt="../_images/spec1_3.png" class="align-center" src="../_images/spec1_3.png" style="width: 100%;" /></a>
+<p><br/><br/></p>
+<ol class="arabic simple" start="4">
+<li><p>Convert watts to BTU/hr and ton.</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>P(BTU/hr) = 3.412141633 × P(W).
+cooling BTU/hr = 3900 W x 3.412141633 = 13307 BTU/hr = 13 kBTU/hr
+heating BTU/hr = 9000 W x 3.412141633 = 30709 BTU/hr = 31 kBTU/hr
+
+cooling ton = 13 (kBTU/hr)/ 12 = 1.1 ton
+heating ton = 31 (kBTU/hr)/ 12 = 2.6 ton
+</pre></div>
+</div>
+</section>
+<section id="window-units">
+<h2><span class="section-number">6.1.2. </span>Window units?<a class="headerlink" href="#window-units" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>This is the heating and cooling capacity we are looking out for. We will search for our package unit at <a href="https://www.homedepot.com/b/Heating-Venting-Cooling/N-5yc1vZc4k8" target="_blank">home depot heating and cooling services</a>. Since our shoebox model is so small. Lets look at if we can get away with using a window unit for both heating and cooling.</p></li>
+</ol>
+<a class="reference internal image-reference" href="../_images/spec1_4.png"><img alt="../_images/spec1_4.png" class="align-center" src="../_images/spec1_4.png" style="width: 100%;" /></a>
+<p><br/><br/></p>
+<ol class="arabic simple" start="2">
+<li><p>Our room is about medium size.</p></li>
+</ol>
+<a class="reference internal image-reference" href="../_images/spec1_5.png"><img alt="../_images/spec1_5.png" class="align-center" src="../_images/spec1_5.png" style="width: 100%;" /></a>
+<p><br/><br/></p>
+<ol class="arabic simple" start="3">
+<li><p>A quick overview of the capacity. We need quite alot of heating and most window conditioner do not have heating or no sufficient heating.</p></li>
+</ol>
+<a class="reference internal image-reference" href="../_images/spec1_6.png"><img alt="../_images/spec1_6.png" class="align-center" src="../_images/spec1_6.png" style="width: 100%;" /></a>
+<p><br/><br/></p>
+<ol class="arabic simple" start="4">
+<li><p>If you click on one of the option and look at the specification. You will see that most of the window units have no heating btu/hr rate.</p></li>
+</ol>
+<a class="reference internal image-reference" href="../_images/spec1_7.png"><img alt="../_images/spec1_7.png" class="align-center" src="../_images/spec1_7.png" style="width: 100%;" /></a>
+<p><br/><br/></p>
+</section>
+<section id="central-air-conditioning-heat-pump">
+<h2><span class="section-number">6.1.3. </span>Central air conditioning heat pump<a class="headerlink" href="#central-air-conditioning-heat-pump" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Go to <a href="https://www.homedepot.com/b/Heating-Venting-Cooling/N-5yc1vZc4k8" target="_blank">home depot heating and cooling services</a>. Click on Central Air Conditioners.</p></li>
+</ol>
+<a class="reference internal image-reference" href="../_images/spec1_8.png"><img alt="../_images/spec1_8.png" class="align-center" src="../_images/spec1_8.png" style="width: 100%;" /></a>
+<p><br/><br/></p>
+<ol class="arabic simple" start="2">
+<li><p>Click on the heat pump.</p></li>
+</ol>
+<a class="reference internal image-reference" href="../_images/spec1_9.png"><img alt="../_images/spec1_9.png" class="align-center" src="../_images/spec1_9.png" style="width: 100%;" /></a>
+<p><br/><br/></p>
+<ol class="arabic simple" start="3">
+<li><p>I have selected the Best Seller MRCOOl unit that is 36 kBTU/hr as shown below.</p></li>
+</ol>
+<a class="reference internal image-reference" href="../_images/spec1_10.png"><img alt="../_images/spec1_10.png" class="align-center" src="../_images/spec1_10.png" style="width: 100%;" /></a>
+<p><br/><br/></p>
+<ol class="arabic simple" start="4">
+<li><p>Click on the specifications. It satisfies both the heating and cooling capacity. Its cooling capacity is much higher than what is required. This means that when cooling, the machine is always running at partial load. It is inefficient.</p></li>
+</ol>
+<a class="reference internal image-reference" href="../_images/spec1_11.png"><img alt="../_images/spec1_11.png" class="align-center" src="../_images/spec1_11.png" style="width: 100%;" /></a>
+<ol class="arabic simple" start="5">
+<li><p>We can use this heat pump for heating and get a much smaller window units for cooling. As shown in the previous section.</p></li>
+<li><p>My eventual selections are :</p></li>
+</ol>
+<ul class="simple">
+<li><p><a href="https://www.homedepot.com/p/MRCOOL-Universal-Series-Split-System-36-000-BTU-3-Ton-18-Seer-Heat-Pump-and-Air-Handler-230V-MDHP1836/327780345" target="_blank">central heat pump</a></p></li>
+<li><p><a href="https://www.homedepot.com/p/LG-14-000-BTU-115V-Window-Air-Conditioner-Cools-700-sq-ft-with-Wi-Fi-Remote-Dehumidifier-and-in-White-LW1523ERSM/322847864" target="_blank">window unit</a></p></li>
+<li><p><strong>When managing a project it is important to discuss with the HVAC engineer/contractor about the selection as they have more experience and knowledge.</strong> The purpose of the exercise is to introduce you to the process and facilitate your discussion with the HVAC engineer/contractor.</p></li>
+</ul>
+<ol class="arabic simple" start="7">
+<li><p>Can you get a cheaper deal by selecting an electric furnace for heating and window unit for cooling?</p></li>
+</ol>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -432,12 +532,39 @@
         <p class="prev-next-title"><span class="section-number">6. </span>Specifying Packaged HVAC Systems</p>
       </div>
     </a>
+    <a class="right-next"
+       href="06_2_spec_hvac_p2.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">6.2. </span>Specifying Packaged HVAC Systems Part 1</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
             </div>
             
             
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#get-the-required-capacity">6.1.1. Get the required capacity</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#window-units">6.1.2. Window units?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#central-air-conditioning-heat-pump">6.1.3. Central air conditioning heat pump</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
