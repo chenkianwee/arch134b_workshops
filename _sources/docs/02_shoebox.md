@@ -43,6 +43,13 @@ A shoebox model is a simplified, usually rectangular building used for pre-desig
 <br/><br/>
 
 8. Download the <a href="https://github.com/chenkianwee/ifc2osmod_gendgn_egs/archive/refs/heads/main.zip" target="_blank">zip file</a>. Unzip the file. Go to csv -> CustomPsets.csv, copy and paste this file into the file path shown in the previous step.
+- for windows users, your file path is probably something like this 'C:\\Users\some_user_name\AppData\Roaming\FreeCAD\BIM'. If you go to the path you will not be able to see the 'AppData' as it is a hidden folder. You would want to turn on you 'Hidden items' in order for you to find the 'AppData' as shown in the image below.
+- if the 'BIM' folder is not there create a new folder called 'BIM' and copy and paste the csv file into the folder.
+```{image} ../_static/start/start17.png
+:width: 100%
+:align: center
+```
+<br/><br/>
 
 9. Change the Start up workbench to BIM. Go to Edit -> Preferences -> Workbenches -> Available Workbenches
 ```{image} ../_static/start/start7.png
