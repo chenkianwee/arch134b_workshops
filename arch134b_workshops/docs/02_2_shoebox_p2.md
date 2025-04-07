@@ -95,6 +95,7 @@ Window = 0.00
 FloorAreaPerPerson = 18.6
 LightingPowerPerFloorArea = 6.18
 ElectricEquipmentPowerPerFloorArea = 6.78
+OutdoorAirFlowPerFloorArea = 0.0
 ```
 
 ## Export to IFC
