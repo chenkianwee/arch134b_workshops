@@ -390,8 +390,8 @@
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#specify-the-construction-of-the-building-envelope">2.6.1. Specify the construction of the building envelope</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#edit-roof-and-floor-construction">2.6.2. Edit roof and floor construction</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#add-a-new-wall-construction">2.6.3. Add a new wall construction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#add-a-new-wall-construction">2.6.2. Add a new wall construction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#roof-and-floor-construction">2.6.3. Roof and floor construction</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#edit-window-construction">2.6.4. Edit window construction</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assign-construction-to-the-surfaces">2.6.5. Assign construction to the surfaces</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#add-measure">2.6.6. Add measure</a></li>
@@ -412,89 +412,13 @@
 <section id="specify-the-construction-of-the-building-envelope">
 <h2><span class="section-number">2.6.1. </span>Specify the construction of the building envelope<a class="headerlink" href="#specify-the-construction-of-the-building-envelope" title="Link to this heading">#</a></h2>
 <ol class="arabic simple">
-<li><p>Next click on the Spaces tab. Click on the Surfaces tab. We can see that the shoebox model only have 6 surfaces. 4 walls 1 roof and 1 floor. Here you can see the specification of each surface. Lets look at the first row. Space_envelope_0 is:</p></li>
+<li><p>Next click on the Spaces tab. Click on the Surfaces tab. We can see that the shoebox model only have 6 surfaces. 4 walls 1 roof and 1 floor. Here you can see the specification of each surface.</p></li>
 </ol>
-<ul class="simple">
-<li><p>Surface Type: Wall</p></li>
-<li><p>Construction: nonres_roof</p></li>
-<li><p>Outside Boundary Condition: Outdoors</p></li>
-<li><p>Outside Boundary Condition: empty</p></li>
-</ul>
-<a class="reference internal image-reference" href="../_images/shoe4_1.png"><img alt="../_images/shoe4_1.png" class="align-center" src="../_images/shoe4_1.png" style="width: 100%;" /></a>
-</section>
-<section id="edit-roof-and-floor-construction">
-<h2><span class="section-number">2.6.2. </span>Edit roof and floor construction<a class="headerlink" href="#edit-roof-and-floor-construction" title="Link to this heading">#</a></h2>
-<ol class="arabic simple">
-<li><p>Lets look at the nonres_roof construction. Go to the Constructions tab. In the window go to the Constructions tab at the top. Click on the nonres_roof. We can see that it is made up of 3 layers. Outside -&gt; Material 1 -&gt; Material No Mass 1 -&gt; Material 2 -&gt; Inside.</p></li>
-</ol>
-<a class="reference internal image-reference" href="../_images/shoe4_2.png"><img alt="../_images/shoe4_2.png" class="align-center" src="../_images/shoe4_2.png" style="width: 100%;" /></a>
-<p><br/><br/></p>
-<ol class="arabic simple" start="2">
-<li><p>Lets adjust the construction of the roof for New York climate. Change the name of the construction to ‘roof’. Remove Material 2 from the nonres_roof by clicking on the x. Move Material No Mass 1 to the top and Material 1 below it. You can do so by clicking the layers and dragging it to the correct position.</p></li>
-</ol>
-<a class="reference internal image-reference" href="../_images/shoe4_3.png"><img alt="../_images/shoe4_3.png" class="align-center" src="../_images/shoe4_3.png" style="width: 100%;" /></a>
-<p><br/><br/></p>
-<ol class="arabic simple" start="3">
-<li><p>Go to the Materials tab. Search for ‘material no mass 1’ and change its name to ‘Roof Insulation’. Change the Thermal Resistance to 8.1 m2K/W</p></li>
-</ol>
-<a class="reference internal image-reference" href="../_images/shoe4_4.png"><img alt="../_images/shoe4_4.png" class="align-center" src="../_images/shoe4_4.png" style="width: 100%;" /></a>
-<p><br/><br/></p>
-<ol class="arabic simple" start="4">
-<li><p>Search for ‘material 1’ and change the name to 16mm gypsum board. Change the value of the parameters accordingly.</p></li>
-</ol>
-<ul class="simple">
-<li><p>Roughness: MediumSmooth</p></li>
-<li><p>Thickness: 0.016</p></li>
-<li><p>Conductivity: 0.16</p></li>
-<li><p>Density: 800</p></li>
-<li><p>Specific Heat: 1090</p></li>
-<li><p>Thermal Absorptance: 0.9</p></li>
-<li><p>Solar Absorptance: 0.7</p></li>
-<li><p>Visible Asorptance: 0.7</p></li>
-</ul>
-<a class="reference internal image-reference" href="../_images/shoe4_5.png"><img alt="../_images/shoe4_5.png" class="align-center" src="../_images/shoe4_5.png" style="width: 100%;" /></a>
-<p><br/><br/></p>
-<ol class="arabic simple" start="5">
-<li><p>Now if you go back to the Construction tab and look at the roof. You can see the construction properly configured.</p></li>
-</ol>
-<a class="reference internal image-reference" href="../_images/shoe4_6.png"><img alt="../_images/shoe4_6.png" class="align-center" src="../_images/shoe4_6.png" style="width: 100%;" /></a>
-<p><br/><br/></p>
-<ol class="arabic simple" start="6">
-<li><p>Now let’s configure the construction for your floor. Search for ‘res_roof_floor’. Change the name to ‘floor’. Move ‘Material Mass 2’ to the top and ‘Material 3’ to the bottom.</p></li>
-</ol>
-<a class="reference internal image-reference" href="../_images/shoe4_7.png"><img alt="../_images/shoe4_7.png" class="align-center" src="../_images/shoe4_7.png" style="width: 100%;" /></a>
-<p><br/><br/></p>
-<ol class="arabic simple" start="7">
-<li><p>Go to Materials tab and search for ‘material mass 2’. Click on the material. Change the name to ‘floor insulation’. Change the properties to the following value.</p></li>
-</ol>
-<ul class="simple">
-<li><p>Roughness: MediumSmooth</p></li>
-<li><p>Thermal Resistance: 4.13</p></li>
-<li><p>Thermal Absorptance: 0.9</p></li>
-<li><p>Solar Absorptance: 0.7</p></li>
-<li><p>Visible Absorptance: 0.7</p></li>
-</ul>
-<a class="reference internal image-reference" href="../_images/shoe4_8.png"><img alt="../_images/shoe4_8.png" class="align-center" src="../_images/shoe4_8.png" style="width: 100%;" /></a>
-<p><br/><br/></p>
-<ol class="arabic simple" start="8">
-<li><p>Next search for ‘material 3’ in the Materials tab. Change the name to ‘100mm normal weight concrete floor’. Change the values of the parameters as follows. If you go back to the constructions tab. The floor will be properly configured.</p></li>
-</ol>
-<ul class="simple">
-<li><p>Roughness: MediumRough</p></li>
-<li><p>Thickness: 0.1</p></li>
-<li><p>Conductivity: 2.31</p></li>
-<li><p>Density: 2322</p></li>
-<li><p>Specific Heat: 832</p></li>
-<li><p>Thermal Absorptance: 0.9</p></li>
-<li><p>Solar Absorptance: 0.7</p></li>
-<li><p>Visible Asorptance: 0.7</p></li>
-</ul>
-<a class="reference internal image-reference" href="../_images/shoe4_9.png"><img alt="../_images/shoe4_9.png" class="align-center" src="../_images/shoe4_9.png" style="width: 100%;" /></a>
 </section>
 <section id="add-a-new-wall-construction">
-<h2><span class="section-number">2.6.3. </span>Add a new wall construction<a class="headerlink" href="#add-a-new-wall-construction" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">2.6.2. </span>Add a new wall construction<a class="headerlink" href="#add-a-new-wall-construction" title="Link to this heading">#</a></h2>
 <ol class="arabic simple">
-<li><p>Next we need to add a new wall construction. Click on the + button at the Constructions tab. Change the name of the construction to ‘wall’. At the right window click on the ‘My Model’ tab. There are no wall materials yet.</p></li>
+<li><p>Next go to the Constructions tab. In the window go to the Constructions tab at the top. Click on the + button at the Constructions tab. Change the name of the construction to ‘wall’. At the right window click on the ‘My Model’ tab. There are no wall materials yet.</p></li>
 </ol>
 <a class="reference internal image-reference" href="../_images/shoe4_10.png"><img alt="../_images/shoe4_10.png" class="align-center" src="../_images/shoe4_10.png" style="width: 100%;" /></a>
 <p><br/><br/></p>
@@ -511,11 +435,26 @@
 <a class="reference internal image-reference" href="../_images/shoe4_11.png"><img alt="../_images/shoe4_11.png" class="align-center" src="../_images/shoe4_11.png" style="width: 100%;" /></a>
 <p><br/><br/></p>
 <ol class="arabic simple" start="3">
+<li><p>Click on ‘Materials’. Click on the ‘+’ button. Name the new material ‘16mm gypsum board’. Adjust the value of the properties as follows.</p></li>
+</ol>
+<ul class="simple">
+<li><p>Roughness: MediumSmooth</p></li>
+<li><p>Thickness: 0.016</p></li>
+<li><p>Conductivity: 0.16</p></li>
+<li><p>Density: 800</p></li>
+<li><p>Specific Heat: 1090</p></li>
+<li><p>Thermal Absorptance: 0.9</p></li>
+<li><p>Solar Absorptance: 0.7</p></li>
+<li><p>Visible Asorptance: 0.7</p></li>
+</ul>
+<a class="reference internal image-reference" href="../_images/shoe4_5.png"><img alt="../_images/shoe4_5.png" class="align-center" src="../_images/shoe4_5.png" style="width: 100%;" /></a>
+<p><br/><br/></p>
+<ol class="arabic simple" start="4">
 <li><p>Next we will use a material from the standard material library of OpenStudio Application. Click on ‘Library’ on the right window. Search for ‘stucco’. Drag and drop ‘1IN Stucco’ to the ‘Drag from Library’ parameter. Pay attention to the arrow to turn to a ‘+’ sign before dropping the material. You will be able to see 1IN stucco in the Materials tab.</p></li>
 </ol>
 <a class="reference internal image-reference" href="../_images/shoe4_12.png"><img alt="../_images/shoe4_12.png" class="align-center" src="../_images/shoe4_12.png" style="width: 100%;" /></a>
 <p><br/><br/></p>
-<ol class="arabic simple" start="4">
+<ol class="arabic simple" start="5">
 <li><p>Now we can go back to the Constructions tab. Click on the wall construction. Go to the My Model tab at the right window. Search for ‘1IN Stucco’. Drag and drop the material onto the wall construction. Repeat for the rest of these materials.</p></li>
 </ol>
 <ul class="simple">
@@ -525,10 +464,59 @@
 </ul>
 <a class="reference internal image-reference" href="../_images/shoe4_13.png"><img alt="../_images/shoe4_13.png" class="align-center" src="../_images/shoe4_13.png" style="width: 100%;" /></a>
 <p><br/><br/></p>
-<ol class="arabic simple" start="5">
+<ol class="arabic simple" start="6">
 <li><p>Your wall construction should look like this.</p></li>
 </ol>
 <a class="reference internal image-reference" href="../_images/shoe4_14.png"><img alt="../_images/shoe4_14.png" class="align-center" src="../_images/shoe4_14.png" style="width: 100%;" /></a>
+<p><br/><br/></p>
+<ol class="arabic simple" start="7">
+<li><p>Do the same for the roof and floor construction.</p></li>
+</ol>
+</section>
+<section id="roof-and-floor-construction">
+<h2><span class="section-number">2.6.3. </span>Roof and floor construction<a class="headerlink" href="#roof-and-floor-construction" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Create a no mass roof insulation with the following values:</p></li>
+</ol>
+<ul class="simple">
+<li><p>Roughness: MediumSmooth</p></li>
+<li><p>Thermal Resistance: 8.1</p></li>
+<li><p>Thermal Absorptance: 0.9</p></li>
+<li><p>Solar Absorptance: 0.7</p></li>
+<li><p>Visible Absorptance: 0.7</p></li>
+</ul>
+<ol class="arabic simple" start="2">
+<li><p>Reuse the 16mm gypsum board for your roof construction. Your roof construction should look like this.</p></li>
+</ol>
+<a class="reference internal image-reference" href="../_images/shoe4_6.png"><img alt="../_images/shoe4_6.png" class="align-center" src="../_images/shoe4_6.png" style="width: 100%;" /></a>
+<p><br/><br/></p>
+<ol class="arabic simple" start="3">
+<li><p>Now let’s create the construction for your floor. Create a no mass material for your floor called ‘floor insulation’.</p></li>
+</ol>
+<ul class="simple">
+<li><p>Roughness: MediumSmooth</p></li>
+<li><p>Thermal Resistance: 4.13</p></li>
+<li><p>Thermal Absorptance: 0.9</p></li>
+<li><p>Solar Absorptance: 0.7</p></li>
+<li><p>Visible Absorptance: 0.7</p></li>
+</ul>
+<ol class="arabic simple" start="4">
+<li><p>Next create a material called ‘100mm normal weight concrete floor’. Change the values of the parameters as follows.</p></li>
+</ol>
+<ul class="simple">
+<li><p>Roughness: MediumRough</p></li>
+<li><p>Thickness: 0.1</p></li>
+<li><p>Conductivity: 2.31</p></li>
+<li><p>Density: 2322</p></li>
+<li><p>Specific Heat: 832</p></li>
+<li><p>Thermal Absorptance: 0.9</p></li>
+<li><p>Solar Absorptance: 0.7</p></li>
+<li><p>Visible Asorptance: 0.7</p></li>
+</ul>
+<ol class="arabic simple" start="5">
+<li><p>Your floor construction should look at follows:</p></li>
+</ol>
+<a class="reference internal image-reference" href="../_images/shoe4_28.png"><img alt="../_images/shoe4_28.png" class="align-center" src="../_images/shoe4_28.png" style="width: 100%;" /></a>
 </section>
 <section id="edit-window-construction">
 <h2><span class="section-number">2.6.4. </span>Edit window construction<a class="headerlink" href="#edit-window-construction" title="Link to this heading">#</a></h2>
@@ -672,8 +660,8 @@
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#specify-the-construction-of-the-building-envelope">2.6.1. Specify the construction of the building envelope</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#edit-roof-and-floor-construction">2.6.2. Edit roof and floor construction</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#add-a-new-wall-construction">2.6.3. Add a new wall construction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#add-a-new-wall-construction">2.6.2. Add a new wall construction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#roof-and-floor-construction">2.6.3. Roof and floor construction</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#edit-window-construction">2.6.4. Edit window construction</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assign-construction-to-the-surfaces">2.6.5. Assign construction to the surfaces</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#add-measure">2.6.6. Add measure</a></li>
