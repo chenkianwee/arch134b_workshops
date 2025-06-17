@@ -18,6 +18,9 @@ parts:
     - file: docs/02_3_shoebox_p3
     - file: docs/02_4_shoebox_p4
     - file: docs/02_5_shoebox_p5
+  - file: docs/07_shoebox_flrspace
+    sections:
+    - file: docs/07_1_shoebox_flrspace_p1
   - file: docs/03_cmf
     sections:
     - file: docs/03_1_cmf_p1
