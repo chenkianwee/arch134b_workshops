@@ -1,4 +1,4 @@
-# Shoebox Model-Part 4: OpenStudio Model Constructions
+# Shoebox Model-Part 3: OpenStudio Model Constructions
 
 ## Specify the construction of the building envelope
 1. Next click on the Spaces tab. Click on the Surfaces tab. We can see that the shoebox model only have 6 surfaces. 4 walls 1 roof and 1 floor. Here you can see the specification of each surface.
