@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>2.4. Shoebox Model-Part 2: Defining the Thermal Properties of the Model &#8212; Arch134b workshops</title>
+    <title>3. Shoebox Model Using only OpenStudio and its Geometry Editor FloorspaceJS &#8212; Arch134b workshops</title>
   
   
   
@@ -60,11 +60,11 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/02_2_shoebox_p2';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/07_shoebox_flrspace';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="2.5. Shoebox Model-Part 3: OpenStudio Model Schedules" href="02_3_shoebox_p3.html" />
-    <link rel="prev" title="2.3. Shoebox Model-Part 1: 3D BIM" href="02_1_shoebox_p1.html" />
+    <link rel="next" title="3.1. Shoebox Model with OpenStudio-Part 1: Building the 3D Model" href="07_1_shoebox_flrspace_p1.html" />
+    <link rel="prev" title="2.7. Shoebox Model-Part 5: Visualization of Results" href="02_5_shoebox_p5.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -169,15 +169,15 @@
 <li class="toctree-l2"><a class="reference internal" href="01_2_climate_p2.html">1.4. Climate Analysis Part 2: Visualize Climate Data</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="02_shoebox.html">2. Shoebox Model</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l1 has-children"><a class="reference internal" href="02_shoebox.html">2. Shoebox Model</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="02_1_shoebox_p1.html">2.3. Shoebox Model-Part 1: 3D BIM</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">2.4. Shoebox Model-Part 2: Defining the Thermal Properties of the Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="02_2_shoebox_p2.html">2.4. Shoebox Model-Part 2: Defining the Thermal Properties of the Model</a></li>
 <li class="toctree-l2"><a class="reference internal" href="02_3_shoebox_p3.html">2.5. Shoebox Model-Part 3: OpenStudio Model Schedules</a></li>
 <li class="toctree-l2"><a class="reference internal" href="02_4_shoebox_p4.html">2.6. Shoebox Model-Part 4: OpenStudio Model Constructions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="02_5_shoebox_p5.html">2.7. Shoebox Model-Part 5: Visualization of Results</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="07_shoebox_flrspace.html">3. Shoebox Model Using only OpenStudio and its Geometry Editor FloorspaceJS</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">3. Shoebox Model Using only OpenStudio and its Geometry Editor FloorspaceJS</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="07_1_shoebox_flrspace_p1.html">3.1. Shoebox Model with OpenStudio-Part 1: Building the 3D Model</a></li>
 </ul>
 </details></li>
@@ -277,7 +277,7 @@
       
       
       
-      <li><a href="https://github.com/chenkianwee/pbad/issues/new?title=Issue%20on%20page%20%2Fdocs/02_2_shoebox_p2.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/chenkianwee/pbad/issues/new?title=Issue%20on%20page%20%2Fdocs/07_shoebox_flrspace.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -307,7 +307,7 @@
       
       
       
-      <li><a href="../_sources/docs/02_2_shoebox_p2.md" target="_blank"
+      <li><a href="../_sources/docs/07_shoebox_flrspace.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -370,9 +370,7 @@
 <button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
 </button>
-<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</button>
+
 </div></div>
       
     </div>
@@ -383,21 +381,11 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Shoebox Model-Part 2: Defining the Thermal Properties of the Model</h1>
+    <h1>Shoebox Model Using only OpenStudio and its Geometry Editor FloorspaceJS</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-thermal-spatial-zone">2.4.1. Create thermal spatial zone</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#add-custom-thermal-psets-to-the-objects">2.4.2. Add custom thermal psets to the objects</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#export-to-ifc">2.4.3. Export to IFC</a></li>
-</ul>
-            </nav>
         </div>
     </div>
 </div>
@@ -407,101 +395,14 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="shoebox-model-part-2-defining-the-thermal-properties-of-the-model">
-<h1><span class="section-number">2.4. </span>Shoebox Model-Part 2: Defining the Thermal Properties of the Model<a class="headerlink" href="#shoebox-model-part-2-defining-the-thermal-properties-of-the-model" title="Link to this heading">#</a></h1>
-<section id="create-thermal-spatial-zone">
-<h2><span class="section-number">2.4.1. </span>Create thermal spatial zone<a class="headerlink" href="#create-thermal-spatial-zone" title="Link to this heading">#</a></h2>
-<ol class="arabic simple">
-<li><p>Next we will try to draw the thermal zone for the shoebox. First hide the walls and roof of the shoebox. Shift+select all the walls and the slab as shown in the image below. Right click -&gt; Toggle visibility. You can also use the keyboard shortcut key Space to turn on/off the visibility.</p></li>
-</ol>
-<a class="reference internal image-reference" href="../_images/shoe2_1.png"><img alt="../_images/shoe2_1.png" class="align-center" src="../_images/shoe2_1.png" style="width: 100%;" /></a>
-<p><br/><br/>
-2. Draw a square on the slab. Use the 2d offset function to offset -100mm to the square. We want to create a zone that coincides with the centerline of each wall. Each wall is 200mm thick.</p>
-<a class="reference internal image-reference" href="../_images/shoe2_2.png"><img alt="../_images/shoe2_2.png" class="align-center" src="../_images/shoe2_2.png" style="width: 100%;" /></a>
-<p><br/><br/>
-3. Select the floor slab and toggle visibility (press space to toggle visibility). Click on the arrow on the offset2d and also toggle visibility of Rectangle002. Select Offset2d and adjust the z position to -100mm. The floor slab like the wall slab is also 200mm thick. For the zone to be in the centerline you need the z-position to be -100mm.</p>
-<a class="reference internal image-reference" href="../_images/shoe2_3.png"><img alt="../_images/shoe2_3.png" class="align-center" src="../_images/shoe2_3.png" style="width: 100%;" /></a>
-<p><br/><br/>
-4. Select the Offset2D and click extrude. Extrude along 5200mm and click on OK.</p>
-<a class="reference internal image-reference" href="../_images/shoe2_4.png"><img alt="../_images/shoe2_4.png" class="align-center" src="../_images/shoe2_4.png" style="width: 100%;" /></a>
-<p><br/><br/>
-5. Select the extrude and click on Space icon.</p>
-<a class="reference internal image-reference" href="../_images/shoe2_5.gif"><img alt="../_images/shoe2_5.gif" class="align-center" src="../_images/shoe2_5.gif" style="width: 100%;" /></a>
-<p><br/><br/>
-6. Select the Space. In the data view, change the Ifc Type to ‘Spatial Zone’ and the Predefined Type to ‘THERMAL’</p>
-<a class="reference internal image-reference" href="../_images/shoe2_6.png"><img alt="../_images/shoe2_6.png" class="align-center" src="../_images/shoe2_6.png" style="width: 100%;" /></a>
-<p><br/><br/>
-7.Right click -&gt; Space -&gt; Move to group … Move the Space into the Level object.</p>
-<a class="reference internal image-reference" href="../_images/shoe2_7.png"><img alt="../_images/shoe2_7.png" class="align-center" src="../_images/shoe2_7.png" style="width: 100%;" /></a>
-<p><br/><br/>
-8.Right click -&gt; Site -&gt; Recompute object. Turn on the visibility of all the object. Your model should look like this</p>
-<a class="reference internal image-reference" href="../_images/shoe2_8.png"><img alt="../_images/shoe2_8.png" class="align-center" src="../_images/shoe2_8.png" style="width: 100%;" /></a>
-</section>
-<section id="add-custom-thermal-psets-to-the-objects">
-<h2><span class="section-number">2.4.2. </span>Add custom thermal psets to the objects<a class="headerlink" href="#add-custom-thermal-psets-to-the-objects" title="Link to this heading">#</a></h2>
-<ol class="arabic simple">
-<li><p>Make sure you have added the CustomPset.csv file into the FreeCAD folder. Refer to <a class="reference internal" href="02_shoebox.html#freecad"><span class="std std-ref">Getting Started Steps 7-8</span></a> for instructions.</p></li>
-<li><p>Click on Manage IFC Properties … At the window choose the Order by to IFC type.</p></li>
-</ol>
-<a class="reference internal image-reference" href="../_images/shoe2_9.png"><img alt="../_images/shoe2_9.png" class="align-center" src="../_images/shoe2_9.png" style="width: 100%;" /></a>
-<p><br/><br/>
-3. Select the slab object. Left click on the Add property set… parameter. Press O on the keyboard and choose ‘Osmod Thermal Resistance’. Do this for the roof, floor and walls.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="shoebox-model-using-only-openstudio-and-its-geometry-editor-floorspacejs">
+<h1><span class="section-number">3. </span>Shoebox Model Using only OpenStudio and its Geometry Editor FloorspaceJS<a class="headerlink" href="#shoebox-model-using-only-openstudio-and-its-geometry-editor-floorspacejs" title="Link to this heading">#</a></h1>
+<p>This tutorial is similar to the previous tutorial <a class="reference internal" href="02_shoebox.html"><span class="doc">Shoebox Tutorial</span></a>, the difference is we will be building the 3D model within OpenStudio.</p>
 <ul class="simple">
-<li><p>Enter the following values for the slab and walls.</p></li>
+<li><p>First, install OpenStudio Application==1.9.0 <a href="https://github.com/openstudiocoalition/OpenStudioApplication/releases/tag/v1.9.0" target="_blank">here</a>.</p></li>
 </ul>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Floor</span> <span class="n">slab</span> <span class="o">=</span> <span class="mf">0.00</span>
-<span class="n">Roof</span> <span class="n">slab</span> <span class="o">=</span> <span class="mf">0.00</span>
-<span class="n">Walls</span> <span class="o">=</span> <span class="mf">0.00</span>
-</pre></div>
+<div class="toctree-wrapper compound">
 </div>
-<a class="reference internal image-reference" href="../_images/shoe2_10.gif"><img alt="../_images/shoe2_10.gif" class="align-center" src="../_images/shoe2_10.gif" style="width: 100%;" /></a>
-<p><br/><br/></p>
-<ol class="arabic simple" start="4">
-<li><p>Select the window object. Left click on the Add property set… parameter. Press O on the keyboard and choose ‘Osmod Ufactor’.</p></li>
-</ol>
-<ul class="simple">
-<li><p>Enter the following values for the window.</p></li>
-</ul>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Window</span> <span class="o">=</span> <span class="mf">0.00</span>
-</pre></div>
-</div>
-<a class="reference internal image-reference" href="../_images/shoe2_11.gif"><img alt="../_images/shoe2_11.gif" class="align-center" src="../_images/shoe2_11.gif" style="width: 100%;" /></a>
-<p><br/><br/></p>
-<ol class="arabic simple" start="5">
-<li><p>Select the space object. Left click on the Add property set… parameter. Press O on the keyboard and choose ‘Osmod Space’. Key in the values for the space.</p></li>
-</ol>
-<a class="reference internal image-reference" href="../_images/shoe2_12.gif"><img alt="../_images/shoe2_12.gif" class="align-center" src="../_images/shoe2_12.gif" style="width: 100%;" /></a>
-<p><br/><br/></p>
-<ol class="arabic simple" start="6">
-<li><p>Key in the following values</p></li>
-</ol>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">FloorAreaPerPerson</span> <span class="o">=</span> <span class="mf">18.6</span>
-<span class="n">LightingPowerPerFloorArea</span> <span class="o">=</span> <span class="mf">6.18</span>
-<span class="n">ElectricEquipmentPowerPerFloorArea</span> <span class="o">=</span> <span class="mf">6.78</span>
-<span class="n">OutdoorAirFlowPerFloorArea</span> <span class="o">=</span> <span class="mf">0.0</span>
-</pre></div>
-</div>
-</section>
-<section id="export-to-ifc">
-<h2><span class="section-number">2.4.3. </span>Export to IFC<a class="headerlink" href="#export-to-ifc" title="Link to this heading">#</a></h2>
-<ol class="arabic simple">
-<li><p>Select the Site. Go to File -&gt; Export.</p></li>
-</ol>
-<a class="reference internal image-reference" href="../_images/shoe2_13.gif"><img alt="../_images/shoe2_13.gif" class="align-center" src="../_images/shoe2_13.gif" style="width: 100%;" /></a>
-<p><br/><br/>
-2. Check the exported file by opening it in FreeCAD again. Go to File -&gt; Open</p>
-<a class="reference internal image-reference" href="../_images/shoe2_14.png"><img alt="../_images/shoe2_14.png" class="align-center" src="../_images/shoe2_14.png" style="width: 100%;" /></a>
-<p><br/><br/>
-3. In the import window just click ok and stick with the default settings.</p>
-<a class="reference internal image-reference" href="../_images/shoe2_15.png"><img alt="../_images/shoe2_15.png" class="align-center" src="../_images/shoe2_15.png" style="width: 100%;" /></a>
-<p><br/><br/>
-4. Double click on the IFC objects to fully load the properties and information of the object.</p>
-<a class="reference internal image-reference" href="../_images/shoe2_16.png"><img alt="../_images/shoe2_16.png" class="align-center" src="../_images/shoe2_16.png" style="width: 100%;" /></a>
-<p><br/><br/></p>
-<ol class="arabic simple" start="5">
-<li><p>Now that we have exported the model to IFC. We will convert the model to OpenStudio Model in part 3 of this tutorial.</p></li>
-</ol>
-</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -535,20 +436,20 @@
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="02_1_shoebox_p1.html"
+       href="02_5_shoebox_p5.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><span class="section-number">2.3. </span>Shoebox Model-Part 1: 3D BIM</p>
+        <p class="prev-next-title"><span class="section-number">2.7. </span>Shoebox Model-Part 5: Visualization of Results</p>
       </div>
     </a>
     <a class="right-next"
-       href="02_3_shoebox_p3.html"
+       href="07_1_shoebox_flrspace_p1.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">2.5. </span>Shoebox Model-Part 3: OpenStudio Model Schedules</p>
+        <p class="prev-next-title"><span class="section-number">3.1. </span>Shoebox Model with OpenStudio-Part 1: Building the 3D Model</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -558,24 +459,6 @@
             </div>
             
             
-              
-                <dialog id="pst-secondary-sidebar-modal"></dialog>
-                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-thermal-spatial-zone">2.4.1. Create thermal spatial zone</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#add-custom-thermal-psets-to-the-objects">2.4.2. Add custom thermal psets to the objects</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#export-to-ifc">2.4.3. Export to IFC</a></li>
-</ul>
-  </nav></div>
-
-</div></div>
               
             
           </div>
