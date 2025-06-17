@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>2. Shoebox Model &#8212; Arch134b workshops</title>
+    <title>3.3. Shoebox Model-Part 4: OpenStudio Model Constructions &#8212; Arch134b workshops</title>
   
   
   
@@ -60,11 +60,11 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/02_shoebox';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/07_3_shoebox_flrspace_p3';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="2.3. Shoebox Model-Part 1: 3D BIM" href="02_1_shoebox_p1.html" />
-    <link rel="prev" title="1.4. Climate Analysis Part 2: Visualize Climate Data" href="01_2_climate_p2.html" />
+    <link rel="next" title="4. Designing for Thermal Comfort" href="03_cmf.html" />
+    <link rel="prev" title="3.2. Shoebox Model with OpenStudio-Part 2: Weather Files and Model Schedules" href="07_2_shoebox_flrspace_p2.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -169,7 +169,7 @@
 <li class="toctree-l2"><a class="reference internal" href="01_2_climate_p2.html">1.4. Climate Analysis Part 2: Visualize Climate Data</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">2. Shoebox Model</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="02_shoebox.html">2. Shoebox Model</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="02_1_shoebox_p1.html">2.3. Shoebox Model-Part 1: 3D BIM</a></li>
 <li class="toctree-l2"><a class="reference internal" href="02_2_shoebox_p2.html">2.4. Shoebox Model-Part 2: Defining the Thermal Properties of the Model</a></li>
 <li class="toctree-l2"><a class="reference internal" href="02_3_shoebox_p3.html">2.5. Shoebox Model-Part 3: OpenStudio Model Schedules</a></li>
@@ -177,10 +177,10 @@
 <li class="toctree-l2"><a class="reference internal" href="02_5_shoebox_p5.html">2.7. Shoebox Model-Part 5: Visualization of Results</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="07_shoebox_flrspace.html">3. Shoebox Model Using only OpenStudio and its Geometry Editor FloorspaceJS</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="07_shoebox_flrspace.html">3. Shoebox Model Using only OpenStudio and its Geometry Editor FloorspaceJS</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="07_1_shoebox_flrspace_p1.html">3.1. Shoebox Model with OpenStudio-Part 1: Building the 3D Model</a></li>
 <li class="toctree-l2"><a class="reference internal" href="07_2_shoebox_flrspace_p2.html">3.2. Shoebox Model with OpenStudio-Part 2: Weather Files and Model Schedules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="07_3_shoebox_flrspace_p3.html">3.3. Shoebox Model-Part 4: OpenStudio Model Constructions</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">3.3. Shoebox Model-Part 4: OpenStudio Model Constructions</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="03_cmf.html">4. Designing for Thermal Comfort</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -279,7 +279,7 @@
       
       
       
-      <li><a href="https://github.com/chenkianwee/pbad/issues/new?title=Issue%20on%20page%20%2Fdocs/02_shoebox.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/chenkianwee/pbad/issues/new?title=Issue%20on%20page%20%2Fdocs/07_3_shoebox_flrspace_p3.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -309,7 +309,7 @@
       
       
       
-      <li><a href="../_sources/docs/02_shoebox.md" target="_blank"
+      <li><a href="../_sources/docs/07_3_shoebox_flrspace_p3.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -385,7 +385,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Shoebox Model</h1>
+    <h1>Shoebox Model-Part 4: OpenStudio Model Constructions</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -395,11 +395,13 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#freecad">2.1. FreeCAD</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#install-the-architecture-engineering-workbench">2.1.1. Install the Architecture Engineering Workbench</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#openstudio-application-for-simulation-and-gimp-and-inkscape-for-visualization">2.2. OpenStudio Application for simulation and GIMP and Inkscape for visualization</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#specify-the-construction-of-the-building-envelope">3.3.1. Specify the construction of the building envelope</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#add-a-new-wall-construction">3.3.2. Add a new wall construction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#roof-and-floor-construction">3.3.3. Roof and floor construction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#edit-window-construction">3.3.4. Edit window construction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assign-construction-to-the-surfaces">3.3.5. Assign construction to the surfaces</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#add-measure">3.3.6. Add measure</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#run-the-simulation">3.3.7. Run the simulation</a></li>
 </ul>
             </nav>
         </div>
@@ -411,108 +413,191 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="shoebox-model">
-<h1><span class="section-number">2. </span>Shoebox Model<a class="headerlink" href="#shoebox-model" title="Link to this heading">#</a></h1>
-<p>A shoebox model is a simplified, usually rectangular building used for pre-design to early design performance evaluation. With a simplified model, you can adjust different architectural parameters, e.g. windows size, constructions orientation, to understand how the performance changes with these adjustments. In this tutorial, we will model a 5m x 5m x 5m box in FreeCAD and perform an ideal air load simulation using Openstudio.</p>
-<section id="freecad">
-<h2><span class="section-number">2.1. </span>FreeCAD<a class="headerlink" href="#freecad" title="Link to this heading">#</a></h2>
+  <section class="tex2jax_ignore mathjax_ignore" id="shoebox-model-part-4-openstudio-model-constructions">
+<h1><span class="section-number">3.3. </span>Shoebox Model-Part 4: OpenStudio Model Constructions<a class="headerlink" href="#shoebox-model-part-4-openstudio-model-constructions" title="Link to this heading">#</a></h1>
+<section id="specify-the-construction-of-the-building-envelope">
+<h2><span class="section-number">3.3.1. </span>Specify the construction of the building envelope<a class="headerlink" href="#specify-the-construction-of-the-building-envelope" title="Link to this heading">#</a></h2>
 <ol class="arabic simple">
-<li><p>Install FreeCAD==1.0.0. Follow the instructions here according to you OS <a href="https://www.freecad.org/downloads.php" target="_blank">here</a>.</p></li>
-<li><p>Open FreeCAD. At the startup screen you can choose any of the themes. The tutorial series will use the FreeCAD classic theme.</p></li>
+<li><p>Next click on the Spaces tab. Click on the Surfaces tab. We can see that the shoebox model only have 6 surfaces. 4 walls 1 roof and 1 floor. Here you can see the specification of each surface.</p></li>
 </ol>
-<a class="reference internal image-reference" href="../_images/start1.png"><img alt="../_images/start1.png" class="align-center" src="../_images/start1.png" style="width: 100%;" /></a>
-<p><br/><br/>
-3. In the next screen, under the New File section choose the BIM/Architecture workbench.</p>
-<a class="reference internal image-reference" href="../_images/start2.png"><img alt="../_images/start2.png" class="align-center" src="../_images/start2.png" style="width: 100%;" /></a>
-<p><br/><br/>
-4. Right click on your screen and choose your navigation style. The tutorial series uses the blender navigation style.</p>
-<a class="reference internal image-reference" href="../_images/start3.png"><img alt="../_images/start3.png" class="align-center" src="../_images/start3.png" style="width: 100%;" /></a>
-<p><br/><br/>
-5. Go to the menu on top Edit -&gt; Preferences … -&gt; Draft -&gt; Grid and snapping. We are using FreeCAD for architecture modeling. We will change the grid spacing to 1000mm.</p>
-<a class="reference internal image-reference" href="../_images/start4.png"><img alt="../_images/start4.png" class="align-center" src="../_images/start4.png" style="width: 100%;" /></a>
-<p><br/><br/>
-6. Turn on the Grid Snap and Snap Dimension snapping toggle on the BIM workbench as shown below.</p>
-<a class="reference internal image-reference" href="../_images/start5.png"><img alt="../_images/start5.png" class="align-center" src="../_images/start5.png" style="width: 100%;" /></a>
-<p><br/><br/>
-7. In the BIM workbench, click on the Manage Ifc Properties icon. In the window you will be able to see a file path to put custom Psets csv.</p>
-<a class="reference internal image-reference" href="../_images/start6.png"><img alt="../_images/start6.png" class="align-center" src="../_images/start6.png" style="width: 100%;" /></a>
-<p><br/><br/></p>
-<ol class="arabic simple" start="8">
-<li><p>Download the <a href="https://github.com/chenkianwee/ifc2osmod_gendgn_egs/archive/refs/heads/main.zip" target="_blank">zip file</a>. Unzip the file. Go to csv -&gt; CustomPsets.csv, copy and paste this file into the file path shown in the previous step.</p></li>
-</ol>
-<ul class="simple">
-<li><p>for windows users, your file path is probably something like this ‘C:\Users\some_user_name\AppData\Roaming\FreeCAD\BIM’. If you go to the path you will not be able to see the ‘AppData’ as it is a hidden folder. You would want to turn on you ‘Hidden items’ in order for you to find the ‘AppData’ as shown in the image below.</p></li>
-<li><p>if the ‘BIM’ folder is not there create a new folder called ‘BIM’ and copy and paste the csv file into the folder.</p></li>
-</ul>
-<a class="reference internal image-reference" href="../_images/start17.png"><img alt="../_images/start17.png" class="align-center" src="../_images/start17.png" style="width: 100%;" /></a>
-<p><br/><br/></p>
-<ol class="arabic simple" start="9">
-<li><p>Change the Start up workbench to BIM. Go to Edit -&gt; Preferences -&gt; Workbenches -&gt; Available Workbenches</p></li>
-</ol>
-<a class="reference internal image-reference" href="../_images/start7.png"><img alt="../_images/start7.png" class="align-center" src="../_images/start7.png" style="width: 100%;" /></a>
-<p><br/><br/></p>
-<section id="install-the-architecture-engineering-workbench">
-<h3><span class="section-number">2.1.1. </span>Install the Architecture Engineering Workbench<a class="headerlink" href="#install-the-architecture-engineering-workbench" title="Link to this heading">#</a></h3>
+</section>
+<section id="add-a-new-wall-construction">
+<h2><span class="section-number">3.3.2. </span>Add a new wall construction<a class="headerlink" href="#add-a-new-wall-construction" title="Link to this heading">#</a></h2>
 <ol class="arabic simple">
-<li><p>In FreeCAD go to Edit -&gt; Preferences.</p></li>
+<li><p>Next go to the Constructions tab. In the window go to the Constructions tab at the top. Click on the + button at the Constructions tab. Change the name of the construction to ‘wall’. At the right window click on the ‘My Model’ tab. There are no wall materials yet.</p></li>
 </ol>
-<a class="reference internal image-reference" href="../_images/start8.png"><img alt="../_images/start8.png" class="align-center" src="../_images/start8.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/shoe4_10.png"><img alt="../_images/shoe4_10.png" class="align-center" src="../_images/shoe4_10.png" style="width: 100%;" /></a>
 <p><br/><br/></p>
 <ol class="arabic simple" start="2">
-<li><p>In the preferences window select Addon Manager -&gt; Addon manager options. Under the Custom repositories click on the ‘+’ sign. Fill in the following details and press apply:</p></li>
+<li><p>Go to the Materials tab. Click on the ‘No Mass Materials’. Click on the ‘+’ button. Name the new material ‘wall insulation’. Adjust the value of the properties as follows.</p></li>
 </ol>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-</span> <span class="n">Repository</span> <span class="n">URL</span><span class="p">:</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">chenkianwee</span><span class="o">/</span><span class="n">ArchEng_Workbench</span>
-<span class="o">-</span> <span class="n">Branch</span><span class="p">:</span> <span class="n">master</span>
-</pre></div>
-</div>
-<a class="reference internal image-reference" href="../_images/start9.png"><img alt="../_images/start9.png" class="align-center" src="../_images/start9.png" style="width: 100%;" /></a>
+<ul class="simple">
+<li><p>Roughness: MediumSmooth</p></li>
+<li><p>Thermal Resistance: 1.65</p></li>
+<li><p>Thermal Absorptance: 0.9</p></li>
+<li><p>Solar Absorptance: 0.7</p></li>
+<li><p>Visible Absorptance: 0.7</p></li>
+</ul>
+<a class="reference internal image-reference" href="../_images/shoe4_11.png"><img alt="../_images/shoe4_11.png" class="align-center" src="../_images/shoe4_11.png" style="width: 100%;" /></a>
 <p><br/><br/></p>
 <ol class="arabic simple" start="3">
-<li><p>Go to Tools -&gt; Addon manager.</p></li>
+<li><p>Click on ‘Materials’. Click on the ‘+’ button. Name the new material ‘16mm gypsum board’. Adjust the value of the properties as follows.</p></li>
 </ol>
-<a class="reference internal image-reference" href="../_images/start10.png"><img alt="../_images/start10.png" class="align-center" src="../_images/start10.png" style="width: 100%;" /></a>
+<ul class="simple">
+<li><p>Roughness: MediumSmooth</p></li>
+<li><p>Thickness: 0.016</p></li>
+<li><p>Conductivity: 0.16</p></li>
+<li><p>Density: 800</p></li>
+<li><p>Specific Heat: 1090</p></li>
+<li><p>Thermal Absorptance: 0.9</p></li>
+<li><p>Solar Absorptance: 0.7</p></li>
+<li><p>Visible Asorptance: 0.7</p></li>
+</ul>
+<a class="reference internal image-reference" href="../_images/shoe4_5.png"><img alt="../_images/shoe4_5.png" class="align-center" src="../_images/shoe4_5.png" style="width: 100%;" /></a>
 <p><br/><br/></p>
 <ol class="arabic simple" start="4">
-<li><p>In the Addon manager window. For the Filter parameter, change it to Workbench, Not installed. In the search bar search for ‘archeng’. You should be able to see the ArchEng Workbench.</p></li>
+<li><p>Next we will use a material from the standard material library of OpenStudio Application. Click on ‘Library’ on the right window. Search for ‘stucco’. Drag and drop ‘1IN Stucco’ to the ‘Drag from Library’ parameter. Pay attention to the arrow to turn to a ‘+’ sign before dropping the material. You will be able to see 1IN stucco in the Materials tab.</p></li>
 </ol>
-<a class="reference internal image-reference" href="../_images/start11.png"><img alt="../_images/start11.png" class="align-center" src="../_images/start11.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/shoe4_12.png"><img alt="../_images/shoe4_12.png" class="align-center" src="../_images/shoe4_12.png" style="width: 100%;" /></a>
 <p><br/><br/></p>
 <ol class="arabic simple" start="5">
-<li><p>Install the workbench. After installation you will be asked to restart FreeCAD.</p></li>
+<li><p>Now we can go back to the Constructions tab. Click on the wall construction. Go to the My Model tab at the right window. Search for ‘1IN Stucco’. Drag and drop the material onto the wall construction. Repeat for the rest of these materials.</p></li>
 </ol>
-<a class="reference internal image-reference" href="../_images/start12.png"><img alt="../_images/start12.png" class="align-center" src="../_images/start12.png" style="width: 100%;" /></a>
+<ul class="simple">
+<li><p>16mm gypsum board</p></li>
+<li><p>wall insulation</p></li>
+<li><p>16mm gypsum board</p></li>
+</ul>
+<a class="reference internal image-reference" href="../_images/shoe4_13.png"><img alt="../_images/shoe4_13.png" class="align-center" src="../_images/shoe4_13.png" style="width: 100%;" /></a>
 <p><br/><br/></p>
 <ol class="arabic simple" start="6">
-<li><p>Once you restart FreeCAD. Go to the workbench dropdown list and choose ArchEng workbench. Then click on the InstallDependencies button.</p></li>
+<li><p>Your wall construction should look like this.</p></li>
 </ol>
-<a class="reference internal image-reference" href="../_images/start13.png"><img alt="../_images/start13.png" class="align-center" src="../_images/start13.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/shoe4_14.png"><img alt="../_images/shoe4_14.png" class="align-center" src="../_images/shoe4_14.png" style="width: 100%;" /></a>
 <p><br/><br/></p>
 <ol class="arabic simple" start="7">
-<li><p>You will be asked to install the dependencies. Click on Yes.</p></li>
+<li><p>Do the same for the roof and floor construction.</p></li>
 </ol>
-<a class="reference internal image-reference" href="../_images/start14.png"><img alt="../_images/start14.png" class="align-center" src="../_images/start14.png" style="width: 100%;" /></a>
-<p><br/><br/></p>
-<ol class="arabic simple" start="8">
-<li><p>This will take some time. Wait for ~5mins, depending on the speed of your computer and internet connection (you must be connected to the internet). Once done, a message will pop up telling you to restart FreeCAD. Manually close FreeCAD and open it again.</p></li>
-</ol>
-<a class="reference internal image-reference" href="../_images/start15.png"><img alt="../_images/start15.png" class="align-center" src="../_images/start15.png" style="width: 100%;" /></a>
-<p><br/><br/></p>
-<ol class="arabic simple" start="9">
-<li><p>Once restarted, go to the ArchEng workbench and click on ifc2osmod. You should see a window pop up. You have successfully installed the workbench. Close the window and move on to next section of this guide.</p></li>
-</ol>
-<a class="reference internal image-reference" href="../_images/start16.png"><img alt="../_images/start16.png" class="align-center" src="../_images/start16.png" style="width: 100%;" /></a>
-<p><br/><br/></p>
 </section>
-</section>
-<section id="openstudio-application-for-simulation-and-gimp-and-inkscape-for-visualization">
-<h2><span class="section-number">2.2. </span>OpenStudio Application for simulation and GIMP and Inkscape for visualization<a class="headerlink" href="#openstudio-application-for-simulation-and-gimp-and-inkscape-for-visualization" title="Link to this heading">#</a></h2>
+<section id="roof-and-floor-construction">
+<h2><span class="section-number">3.3.3. </span>Roof and floor construction<a class="headerlink" href="#roof-and-floor-construction" title="Link to this heading">#</a></h2>
 <ol class="arabic simple">
-<li><p>Install OpenStudio Application==1.8.0 <a href="https://github.com/openstudiocoalition/OpenStudioApplication/releases/tag/v1.8.0" target="_blank">here</a>. Follow the instructions here according to your OS <a href="https://openstudiocoalition.org/getting_started/getting_started/" target="_blank">here</a></p></li>
-<li><p>Install Inkscape==1.4 <a href="https://inkscape.org/release/inkscape-1.4/" target="_blank">here</a> for doing vector illustration and Gimp==3.0.0 <a href="https://www.gimp.org/downloads/" target="_blank">here</a> for working with raster images.</p></li>
+<li><p>Create a no mass roof insulation with the following values:</p></li>
 </ol>
+<ul class="simple">
+<li><p>Roughness: MediumSmooth</p></li>
+<li><p>Thermal Resistance: 8.1</p></li>
+<li><p>Thermal Absorptance: 0.9</p></li>
+<li><p>Solar Absorptance: 0.7</p></li>
+<li><p>Visible Absorptance: 0.7</p></li>
+</ul>
+<ol class="arabic simple" start="2">
+<li><p>Reuse the 16mm gypsum board for your roof construction. Your roof construction should look like this.</p></li>
+</ol>
+<a class="reference internal image-reference" href="../_images/shoe4_6.png"><img alt="../_images/shoe4_6.png" class="align-center" src="../_images/shoe4_6.png" style="width: 100%;" /></a>
+<p><br/><br/></p>
+<ol class="arabic simple" start="3">
+<li><p>Now let’s create the construction for your floor. Create a no mass material for your floor called ‘floor insulation’.</p></li>
+</ol>
+<ul class="simple">
+<li><p>Roughness: MediumSmooth</p></li>
+<li><p>Thermal Resistance: 4.13</p></li>
+<li><p>Thermal Absorptance: 0.9</p></li>
+<li><p>Solar Absorptance: 0.7</p></li>
+<li><p>Visible Absorptance: 0.7</p></li>
+</ul>
+<ol class="arabic simple" start="4">
+<li><p>Next create a material called ‘100mm normal weight concrete floor’. Change the values of the parameters as follows.</p></li>
+</ol>
+<ul class="simple">
+<li><p>Roughness: MediumRough</p></li>
+<li><p>Thickness: 0.1</p></li>
+<li><p>Conductivity: 2.31</p></li>
+<li><p>Density: 2322</p></li>
+<li><p>Specific Heat: 832</p></li>
+<li><p>Thermal Absorptance: 0.9</p></li>
+<li><p>Solar Absorptance: 0.7</p></li>
+<li><p>Visible Asorptance: 0.7</p></li>
+</ul>
+<ol class="arabic simple" start="5">
+<li><p>Your floor construction should look at follows:</p></li>
+</ol>
+<a class="reference internal image-reference" href="../_images/shoe4_28.png"><img alt="../_images/shoe4_28.png" class="align-center" src="../_images/shoe4_28.png" style="width: 100%;" /></a>
 </section>
-<div class="toctree-wrapper compound">
-</div>
+<section id="edit-window-construction">
+<h2><span class="section-number">3.3.4. </span>Edit window construction<a class="headerlink" href="#edit-window-construction" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>In the Constructions tab. Search for ‘window’. Click on the result ‘Window_U_0.363_SHGC_North_0.359’. Change the name to ‘window’.</p></li>
+</ol>
+<a class="reference internal image-reference" href="../_images/shoe4_15.png"><img alt="../_images/shoe4_15.png" class="align-center" src="../_images/shoe4_15.png" style="width: 100%;" /></a>
+<p><br/><br/></p>
+<ol class="arabic simple" start="2">
+<li><p>Go to the Materials tab. Search for ‘window’. Click on ‘Window Material Simple Glazing System 1’. Change the name to ‘glazing 1’. Make sure the material has the same property as shown.</p></li>
+</ol>
+<a class="reference internal image-reference" href="../_images/shoe4_16.png"><img alt="../_images/shoe4_16.png" class="align-center" src="../_images/shoe4_16.png" style="width: 100%;" /></a>
+</section>
+<section id="assign-construction-to-the-surfaces">
+<h2><span class="section-number">3.3.5. </span>Assign construction to the surfaces<a class="headerlink" href="#assign-construction-to-the-surfaces" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Go to the Spaces tab. In the Spaces window click on the Surfaces tab.</p></li>
+</ol>
+<a class="reference internal image-reference" href="../_images/shoe4_17.png"><img alt="../_images/shoe4_17.png" class="align-center" src="../_images/shoe4_17.png" style="width: 100%;" /></a>
+<p><br/><br/></p>
+<ol class="arabic simple" start="2">
+<li><p>At the right window click on ‘My Model’. Search for ‘wall’ and ‘roof’ at the right window. Then drag and drop the wall construction to all the Wall surface type and roof to the Roof Ceiling surface type</p></li>
+</ol>
+<a class="reference internal image-reference" href="../_images/shoe4_18.png"><img alt="../_images/shoe4_18.png" class="align-center" src="../_images/shoe4_18.png" style="width: 100%;" /></a>
+<p><br/><br/></p>
+<ol class="arabic simple" start="3">
+<li><p>Click on the Subsurfaces tab. Check that the window subsurface has the right construction as shown below.</p></li>
+</ol>
+<a class="reference internal image-reference" href="../_images/shoe4_19.png"><img alt="../_images/shoe4_19.png" class="align-center" src="../_images/shoe4_19.png" style="width: 100%;" /></a>
+</section>
+<section id="add-measure">
+<h2><span class="section-number">3.3.6. </span>Add measure<a class="headerlink" href="#add-measure" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Download the .zip file of the common Measures from <a href="https://github.com/NREL/openstudio-common-measures-gem/releases/tag/v0.11.1" target="_blank">here</a>. Unzip the zip file.</p></li>
+<li><p>In the OpenStudio Application. Go to the Measures tab. Click on the ‘my’ icon at the bottom right of the right window. A folder window will pop out once you click it. This is the directory where you store all your Measures.</p></li>
+</ol>
+<a class="reference internal image-reference" href="../_images/shoe4_22.png"><img alt="../_images/shoe4_22.png" class="align-center" src="../_images/shoe4_22.png" style="width: 100%;" /></a>
+<p><br/><br/></p>
+<ol class="arabic simple" start="3">
+<li><p>Unzip the common Measures zip file you downloaded. Go to openstudio-common-measures-gem-0.11.1 -&gt; lib -&gt; measures -&gt; openstudio_results. Copy and paste the folder ‘openstudio_results’ into the my measure directory.</p></li>
+</ol>
+<a class="reference internal image-reference" href="../_images/shoe4_23.png"><img alt="../_images/shoe4_23.png" class="align-center" src="../_images/shoe4_23.png" style="width: 100%;" /></a>
+<p><br/><br/></p>
+<ol class="arabic simple" start="4">
+<li><p>Click on ‘Sync Project Measures with Library’ -&gt; Update. You should now be able to see the OpenStudio Results with a My infront of it.</p></li>
+</ol>
+<a class="reference internal image-reference" href="../_images/shoe4_24.png"><img alt="../_images/shoe4_24.png" class="align-center" src="../_images/shoe4_24.png" style="width: 100%;" /></a>
+<p><br/><br/></p>
+<ol class="arabic simple" start="5">
+<li><p>Apply the OpenStudio Results measure by dragging and dropping it to the Reporting Measures.</p></li>
+</ol>
+<a class="reference internal image-reference" href="../_images/shoe4_25.png"><img alt="../_images/shoe4_25.png" class="align-center" src="../_images/shoe4_25.png" style="width: 100%;" /></a>
+<p><br/><br/></p>
+<ol class="arabic simple" start="6">
+<li><p>Click on the Openstudio Results measure. Choose SI unit for the input.</p></li>
+</ol>
+<a class="reference internal image-reference" href="../_images/shoe4_26.png"><img alt="../_images/shoe4_26.png" class="align-center" src="../_images/shoe4_26.png" style="width: 100%;" /></a>
+</section>
+<section id="run-the-simulation">
+<h2><span class="section-number">3.3.7. </span>Run the simulation<a class="headerlink" href="#run-the-simulation" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Go to Simulation Settings tab and check the simulation settings is as follows.</p></li>
+</ol>
+<a class="reference internal image-reference" href="../_images/shoe4_20.png"><img alt="../_images/shoe4_20.png" class="align-center" src="../_images/shoe4_20.png" style="width: 50%;" /></a>
+<p><br/><br/></p>
+<ol class="arabic simple" start="2">
+<li><p>Go to Run Simulations tab and click on Run to start the simulation.</p></li>
+</ol>
+<a class="reference internal image-reference" href="../_images/shoe4_21.png"><img alt="../_images/shoe4_21.png" class="align-center" src="../_images/shoe4_21.png" style="width: 50%;" /></a>
+<p><br/><br/></p>
+<ol class="arabic simple" start="3">
+<li><p>Go to the result section and look at the results of the simulation and choose OpenStudio Results to look at the simulation results.</p></li>
+</ol>
+<a class="reference internal image-reference" href="../_images/shoe4_27.png"><img alt="../_images/shoe4_27.png" class="align-center" src="../_images/shoe4_27.png" style="width: 100%;" /></a>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -546,20 +631,20 @@
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="01_2_climate_p2.html"
+       href="07_2_shoebox_flrspace_p2.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><span class="section-number">1.4. </span>Climate Analysis Part 2: Visualize Climate Data</p>
+        <p class="prev-next-title"><span class="section-number">3.2. </span>Shoebox Model with OpenStudio-Part 2: Weather Files and Model Schedules</p>
       </div>
     </a>
     <a class="right-next"
-       href="02_1_shoebox_p1.html"
+       href="03_cmf.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">2.3. </span>Shoebox Model-Part 1: 3D BIM</p>
+        <p class="prev-next-title"><span class="section-number">4. </span>Designing for Thermal Comfort</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -580,11 +665,13 @@
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#freecad">2.1. FreeCAD</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#install-the-architecture-engineering-workbench">2.1.1. Install the Architecture Engineering Workbench</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#openstudio-application-for-simulation-and-gimp-and-inkscape-for-visualization">2.2. OpenStudio Application for simulation and GIMP and Inkscape for visualization</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#specify-the-construction-of-the-building-envelope">3.3.1. Specify the construction of the building envelope</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#add-a-new-wall-construction">3.3.2. Add a new wall construction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#roof-and-floor-construction">3.3.3. Roof and floor construction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#edit-window-construction">3.3.4. Edit window construction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assign-construction-to-the-surfaces">3.3.5. Assign construction to the surfaces</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#add-measure">3.3.6. Add measure</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#run-the-simulation">3.3.7. Run the simulation</a></li>
 </ul>
   </nav></div>
 
