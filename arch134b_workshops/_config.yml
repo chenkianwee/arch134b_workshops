@@ -1,9 +1,9 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-title: Arch134b workshops
-author: Kian Wee Chen
-copyright: '2024'
+title: building energy modeling workshops (Rhino & Ladybug Edition)
+author: Gautaman Asirwatham, Amber Sun (Extended from original work by Kian Wee Chen)
+copyright: '2025, Gaudi'
 #logo: logo.png
 
 # Force re-execution of notebooks on each build.
@@ -27,7 +27,7 @@ sphinx:
     
 # Information about where the book exists on the web
 repository:
-  url: https://github.com/chenkianwee/pbad  # Online location of your book
+  url: https://github.com/gaudi369/pbad  # Online location of your book
   path_to_book: pbad  # Optional path to your book, relative to the repository root
   branch: master  # Which branch of the repository should be used when creating links (optional)
 
