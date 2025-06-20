@@ -1,4 +1,4 @@
-# Evaluating Passive HVAC Design Strategies Part 1: Designing Windows and Shade
+# Passive Design and Comfort Part 1: Windows and Shade
 
 ## Modeling shading in FreeCAD
 1. In this tutorial we will be using the shoebox model that was constructed in the [previous exercise](02_shoebox.md#shoebox-model). Open the FreeCAD shoebox.FCStd model.
