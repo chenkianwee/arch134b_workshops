@@ -1,4 +1,4 @@
-# Thermal Comfort Model Part 1: Predicting Thermal Comfort
+# Passive Design and Comfort Part 1: Predicting Thermal Comfort
 
 ## CBE thermal comfort tool
 1. Go to the <a href="https://comfort.cbe.berkeley.edu/" target="_blank">CBE thermal comfort tool</a>.

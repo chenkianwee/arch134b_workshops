@@ -1,4 +1,4 @@
-# Evaluating Passive HVAC Design Strategies Part 2: Testing Shading Design Using Energy Simulation
+# Passive Design and Comfort Part 2: Testing Shading Design Using Energy Simulation
 
 ## Running energy simulation with OpenStudio
 1. Run a base simulation using the openstudio model from [workshop 3 on thermal comfort](03_1_cmf_p1.md#thermal-comfort-model-part-1-predicting-thermal-comfort).

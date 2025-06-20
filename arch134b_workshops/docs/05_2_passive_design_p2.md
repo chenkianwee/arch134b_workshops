@@ -1,4 +1,4 @@
-# Thermal Comfort Model Part 2: Visualizing Thermal Comfort and Energy Reduction
+# Passive Design and Comfort Part 2: Visualizing Thermal Comfort and Energy Reduction
 
 1. Download the visualization .svg template from <a href="https://github.com/chenkianwee/ifc2osmod_gendgn_egs/blob/main/svg/viz_cmf_template.svg" target="_blank">here</a>.
 ```{image} ../_static/cmf2/cmf2_1.png

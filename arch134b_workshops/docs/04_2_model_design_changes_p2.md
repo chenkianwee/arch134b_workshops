@@ -1,4 +1,4 @@
-# Evaluating HVAC Systems Part 2: Visualization
+# Modeling Design Changes Part 2: Visualization
 
 ## Visualize the results
 1. Download the visualization .svg template from <a href="https://github.com/chenkianwee/ifc2osmod_gendgn_egs/blob/main/svg/viz_template_hvac.svg" target="_blank">here</a>.
