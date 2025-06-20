@@ -1,43 +1,50 @@
-# Name of the GitHub Action
 name: Deploy Jupyter Book
 
-# Controls when the action will run. 
-# This action runs on every push to the "main" branch.
 on:
   push:
     branches: [ main ]
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+# This is a new, required section for the official deploy action
+permissions:
+  pages: write      # to deploy to Pages
+  id-token: write   # to verify the deployment originates from an authentic source
+
+# This new concurrency block ensures that only one deployment runs at a time
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 jobs:
-  # This workflow contains a single job called "deploy"
-  deploy:
+  # Build job
+  build:
     runs-on: ubuntu-latest
     steps:
-    # Step 1: Check out your repository's code
-    - name: Checkout repository
-      uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.x
+      - name: Install dependencies
+        run: |
+          pip install -r arch134b_workshops/requirements.txt
+      - name: Build the book
+        run: |
+          jupyter-book build arch134b_workshops
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # This is the directory where the built HTML files are located
+          path: arch134b_workshops/_build/html
 
-    # Step 2: Set up Python so we can use pip
-    - name: Set up Python
-      uses: actions/setup-python@v5
-      with:
-        python-version: 3.x
-
-    # Step 3: Install the Python packages needed to build the book
-    - name: Install dependencies
-      run: |
-        pip install -r arch134b_workshops/requirements.txt
-
-    # Step 4: Build the Jupyter Book
-    # It looks for the book source in the "buildingenergymodeling_workshops" directory, as specified in your _config.yml
-    - name: Build the book
-      run: |
-        jupyter-book build arch134b_workshops
-
-    # Step 5: Deploy the built book to GitHub Pages
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v4
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        # This is the directory where the built HTML files are located
-        publish_dir: arch134b_workshops/_build/html
+  # Deploy job
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build  # This line is crucial - it says "run the build job first"
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
