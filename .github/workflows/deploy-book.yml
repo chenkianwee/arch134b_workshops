@@ -26,7 +26,7 @@ jobs:
     # Step 3: Install the Python packages needed to build the book
     - name: Install dependencies
       run: |
-        pip install -r requirements.txt
+        pip install -r arch134b_workshops/requirements.txt
 
     # Step 4: Build the Jupyter Book
     # It looks for the book source in the "buildingenergymodeling_workshops" directory, as specified in your _config.yml
