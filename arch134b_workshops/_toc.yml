@@ -16,24 +16,23 @@ parts:
     - file: docs/02_1_shoebox_p1
     - file: docs/02_2_shoebox_p2
     - file: docs/02_3_shoebox_p3
-    - file: docs/02_4_shoebox_p4
-    - file: docs/02_5_shoebox_p5
-  - file: docs/07_shoebox_flrspace
+  - file: docs/03_simulation
     sections:
-    - file: docs/07_1_shoebox_flrspace_p1
-  - file: docs/03_cmf
+    - file: docs/03_1_simulation_p1
+    - file: docs/03_2_simulation_p2
+  - file: docs/04_model_design_changes
     sections:
-    - file: docs/03_1_cmf_p1
-    - file: docs/03_2_cmf_p2
-  - file: docs/04_psvdgn
+    - file: docs/04_1_model_design_changes_p1
+    - file: docs/04_2_model_design_changes_p2
+  - file: docs/05_passive_design
     sections:
-    - file: docs/04_1_psvdgn_p1
-    - file: docs/04_2_psvdgn_p2
-  - file: docs/05_hvac
-    sections:
-    - file: docs/05_1_hvac_p1
-    - file: docs/05_2_hvac_p2
+    - file: docs/05_1_passive_design_p1
+    - file: docs/05_2_passive_design_p2
   - file: docs/06_spec_hvac
     sections:
     - file: docs/06_1_spec_hvac_p1
     - file: docs/06_2_spec_hvac_p2
+  - file: docs/07_multi_zone
+    sections:
+    - file: docs/07_1_multi_zone_p1
+    - file: docs/07_2_multi_zone_p2
