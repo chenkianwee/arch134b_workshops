@@ -38,3 +38,4 @@ html:
   use_repository_button: true
   home_page_in_navbar: true
   use_multitoc_numbering: false
+  html_baseurl: "https://gaudi369.github.io/buildingenergymodeling_workshops/"
