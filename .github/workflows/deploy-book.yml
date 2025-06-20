@@ -32,7 +32,7 @@ jobs:
     # It looks for the book source in the "buildingenergymodeling_workshops" directory, as specified in your _config.yml
     - name: Build the book
       run: |
-        jupyter-book build buildingenergymodeling_workshops
+        jupyter-book build arch134b_workshops
 
     # Step 5: Deploy the built book to GitHub Pages
     - name: Deploy to GitHub Pages
@@ -40,4 +40,4 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         # This is the directory where the built HTML files are located
-        publish_dir: buildingenergymodeling_workshops/_build/html
+        publish_dir: arch134b_workshops/_build/html
