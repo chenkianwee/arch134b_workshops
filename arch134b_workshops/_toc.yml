@@ -28,6 +28,8 @@ parts:
     sections:
     - file: docs/05_1_passive_design_p1
     - file: docs/05_2_passive_design_p2
+    - file: docs/05_2_passive_design_p3
+    - file: docs/05_2_passive_design_p4
   - file: docs/06_spec_hvac
     sections:
     - file: docs/06_1_spec_hvac_p1
