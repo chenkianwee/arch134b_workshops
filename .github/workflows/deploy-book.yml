@@ -2,10 +2,10 @@
 name: Deploy Jupyter Book
 
 # Controls when the action will run. 
-# This action runs on every push to the "master" branch.
+# This action runs on every push to the "main" branch.
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
