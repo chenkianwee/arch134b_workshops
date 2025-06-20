@@ -11,11 +11,11 @@ parts:
     sections:
     - file: docs/01_1_climate_p1
     - file: docs/01_2_climate_p2
-  - file: docs/02_intro_to_ladybugtools
+  - file: docs/02_shoebox
     sections:
-    - file: docs/02_1_intro_to_ladybugtools_p1
-    - file: docs/02_2_intro_to_ladybugtools_p2
-    - file: docs/02_3_intro_to_ladybugtools_p3
+    - file: docs/02_1_shoebox_p1
+    - file: docs/02_2_shoebox_p2
+    - file: docs/02_3_shoebox_p3
   - file: docs/03_simulation
     sections:
     - file: docs/03_1_simulation_p1
