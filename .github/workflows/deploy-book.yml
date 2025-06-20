@@ -1,0 +1,43 @@
+# Name of the GitHub Action
+name: Deploy Jupyter Book
+
+# Controls when the action will run. 
+# This action runs on every push to the "master" branch.
+on:
+  push:
+    branches: [ master ]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "deploy"
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    # Step 1: Check out your repository's code
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    # Step 2: Set up Python so we can use pip
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: 3.x
+
+    # Step 3: Install the Python packages needed to build the book
+    - name: Install dependencies
+      run: |
+        pip install -r requirements.txt
+
+    # Step 4: Build the Jupyter Book
+    # It looks for the book source in the "buildingenergymodeling_workshops" directory, as specified in your _config.yml
+    - name: Build the book
+      run: |
+        jupyter-book build buildingenergymodeling_workshops
+
+    # Step 5: Deploy the built book to GitHub Pages
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v4
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        # This is the directory where the built HTML files are located
+        publish_dir: buildingenergymodeling_workshops/_build/html
