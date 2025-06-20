@@ -1,4 +1,4 @@
-# Modeling Design Changes Part 1
+# Modeling Design Changes Part 1: Specifying Program and Construction Details
 
 ## Packaged gas furnace and AC unit
 1. Open your shoebox with shade model from the [previous workshop](04_psvdgn.md#evaluating-passive-hvac-design-strategies) in Openstudio.
