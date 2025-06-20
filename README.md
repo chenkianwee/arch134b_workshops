@@ -1,4 +1,4 @@
-# Building Energy Modeling Workshops (Rhino and Ladybug Tools Edition) 2025
+# Building Energy Modeling Workshops (Rhino & Ladybug Tools Edition) 2025
 tutorials for understanding hvac performance when doing architectural design 
 
 - forked from arch134b_workshops by kian wee on 6/20/2025
