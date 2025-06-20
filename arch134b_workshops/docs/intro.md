@@ -1,1 +1,1 @@
-# Building Energy Modeling Workshops (Rhino and Ladybug Tools Edition 2025)
+# Building Energy Modeling Workshops (Rhino & Ladybug Tools Edition 2025)
