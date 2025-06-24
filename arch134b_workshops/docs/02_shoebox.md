@@ -7,7 +7,7 @@ A shoebox model is a simplified, usually rectangular building used for pre-desig
 
 Download the single family home model here:
 :download:`Single Family Home Rhino Model 
-<../_downloads/single_family.3dm>`
+<arch134b_workshops/_downloads/single_family.3dm>`
      
 ## Pollination Grasshopper Plugin for simulation 
 2. Install <a href="https://app.pollination.solutions/cad-plugins" target="_blank">here</a>
