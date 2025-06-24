@@ -5,9 +5,8 @@ A shoebox model is a simplified, usually rectangular building used for pre-desig
 ## Rhino
 1. Install Rhino8 with Grasshopper: <a href="https://www.rhino3d.com/download/" target="_blank">here</a>
 
-Download the single family home model here:
-:download:`Single Family Home Rhino Model 
-<arch134b_workshops/_downloads/single_family.3dm>`
+Download the single family home Rhino model here:
+:download:`<arch134b_workshops/_downloads/single_family.3dm>`
      
 ## Pollination Grasshopper Plugin for simulation 
 2. Install <a href="https://app.pollination.solutions/cad-plugins" target="_blank">here</a>
