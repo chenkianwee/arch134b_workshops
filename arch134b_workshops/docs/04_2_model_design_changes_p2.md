@@ -1,22 +1,9 @@
 # Specifying Packaged HVAC Systems Part 1
 
 ## Get the required capacity 
-1. Open your shoebox model from the [previous workshop](02_shoebox.md#shoebox-model) in Openstudio.
-```{image} ../_static/spec1/spec1_1.png
-:width: 100%
-:align: center
-```
-<br/><br/>
-
-2. Run the simulation. 
-```{image} ../_static/spec1/spec1_2.png
-:width: 100%
-:align: center
-```
-<br/><br/>
 
 3. Go to the 'District Cooling Peak Demand' and 'District Heating Water Peak Demain'. Identify the highest consumption. According to the graph below, the peak demand for cooling is 3.9kW and heating is 9kW. 
-```{image} ../_static/spec1/spec1_3.png
+```{image} ../_static/hvac1/hvac1_9.png
 :width: 100%
 :align: center
 ```
