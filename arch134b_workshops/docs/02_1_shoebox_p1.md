@@ -7,7 +7,7 @@ By the end of this tutorial, you will have created a set of visualizations in yo
 ```{image} arch134b_workshops/_static/shoebox1/weather_1.png
 :width: 100%
 :align: center
-
+```
 
 <br/><br/>
 
