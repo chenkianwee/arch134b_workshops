@@ -11,37 +11,57 @@ Panel
 ```
 <br/><br/>
 
+Copy EnergyPlus Weather (epw) File Path
 ```{image} ../_static/shoebox1/shoebox1_2.png
 :width: 100%
 :align: center
 ```
 <br/><br/>
 
+Import EPW
 ```{image} ../_static/shoebox1/shoebox1_3.png
 :width: 100%
 :align: center
 ```
 <br/><br/>
 
+Create Temperature and Psychometric Charts
 ```{image} ../_static/shoebox1/shoebox1_4.png
 :width: 100%
 :align: center
 ```
 <br/><br/>
 
+Hide Lines in 8760 plot
 ```{image} ../_static/shoebox1/shoebox1_5.png
 :width: 100%
 :align: center
 ```
 <br/><br/>
 
+Check Plots
 ```{image} ../_static/shoebox1/shoebox1_6.png
 :width: 100%
 :align: center
 ```
 <br/><br/>
 
+Create Wind Rose and Sun Path Visualizations
 ```{image} ../_static/shoebox1/shoebox1_7.png
+:width: 100%
+:align: center
+```
+<br/><br/>
+
+Check Wind Rose
+```{image} ../_static/shoebox1/shoebox1_8.png
+:width: 100%
+:align: center
+```
+<br/><br/>
+
+Check Sun Path (perspective view)
+```{image} ../_static/shoebox1/shoebox1_9.png
 :width: 100%
 :align: center
 ```
