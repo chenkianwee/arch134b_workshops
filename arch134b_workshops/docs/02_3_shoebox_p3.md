@@ -1,4 +1,4 @@
-# Shoebox Model-Part 3: Visualization of Results
+# Visualization of Results
 
 ## Download visualization template 
 1. Go to this <a href="https://github.com/chenkianwee/ifc2osmod_gendgn_egs/blob/main/svg/viz_template.svg" target="_blank">webpage</a> and download the visualization template.

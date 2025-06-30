@@ -1,4 +1,4 @@
-# Shoebox Model-Part 2: Connecting the 3D Model to Visualizations
+# Shoebox Model and Basic Visualizations
 
 Layers
 ```{image} ../_static/shoebox2/shoebox2_1.png
