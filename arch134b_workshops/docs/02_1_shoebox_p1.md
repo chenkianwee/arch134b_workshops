@@ -4,7 +4,7 @@ This tutorial demonstrates how to use the Ladybug plugin in Grasshopper to creat
 
 By the end of this tutorial, you will have created a set of visualizations in your Rhino viewport similar to the one below, which includes an hourly temperature plot, a wind rose, a monthly data chart, and a psychrometric chart for Van Nuys, California.
 
-Generated {image} arch134b_workshops/_static/shoebox1/weather_1.png
+```{image} arch134b_workshops/_static/shoebox1/weather_1.png
 :width: 100%
 :align: center
 
