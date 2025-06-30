@@ -1,4 +1,4 @@
-# Loads and EUI Simulation:
+# Loads and EUI Simulation
 
 Model to OSM
 ```{image} ../_static/sim1/sim1_1.png
