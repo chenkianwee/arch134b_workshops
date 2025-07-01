@@ -4,64 +4,78 @@ This tutorial demonstrates how to use the Ladybug plugin in Grasshopper to creat
 
 By the end of this tutorial, you will have created a set of visualizations in your Rhino viewport similar to the one below, which includes an hourly temperature plot, a monthly data chart, a psychrometric chart, a wind rose, and a sun path diagram for Van Nuys, California.
 
-Panel
+Open Grasshopper from Rhino
 ```{image} ../_static/shoebox1/shoebox1_1.png
 :width: 100%
 :align: center
 ```
 <br/><br/>
 
-Copy EnergyPlus Weather (epw) File Path
+Double click on canvas to search for components. Type in "Panel". Click and drop the Panle onto the canvas. 
 ```{image} ../_static/shoebox1/shoebox1_2.png
 :width: 100%
 :align: center
 ```
 <br/><br/>
 
-Import EPW
+Copy EnergyPlus Weather (epw) File Path
 ```{image} ../_static/shoebox1/shoebox1_3.png
 :width: 100%
 :align: center
 ```
 <br/><br/>
 
-Create Temperature and Psychometric Charts
+Plugin Libraries and Functions are loacted on the top bar. Once you are familiar this is an alternative place to drag and drop components from.
 ```{image} ../_static/shoebox1/shoebox1_4.png
 :width: 100%
 :align: center
 ```
 <br/><br/>
 
-Hide Lines in 8760 plot
+Import EPW
 ```{image} ../_static/shoebox1/shoebox1_5.png
 :width: 100%
 :align: center
 ```
 <br/><br/>
 
-Check Plots
+Create Temperature and Psychometric Charts
 ```{image} ../_static/shoebox1/shoebox1_6.png
 :width: 100%
 :align: center
 ```
 <br/><br/>
 
-Create Wind Rose and Sun Path Visualizations
+Hide Lines in 8760 plot
 ```{image} ../_static/shoebox1/shoebox1_7.png
 :width: 100%
 :align: center
 ```
 <br/><br/>
 
-Check Wind Rose
+Check Plots
 ```{image} ../_static/shoebox1/shoebox1_8.png
 :width: 100%
 :align: center
 ```
 <br/><br/>
 
-Check Sun Path (perspective view)
+Create Wind Rose and Sun Path Visualizations
 ```{image} ../_static/shoebox1/shoebox1_9.png
+:width: 100%
+:align: center
+```
+<br/><br/>
+
+Check Wind Rose
+```{image} ../_static/shoebox1/shoebox1_10.png
+:width: 100%
+:align: center
+```
+<br/><br/>
+
+Check Sun Path (perspective view)
+```{image} ../_static/shoebox1/shoebox1_11.png
 :width: 100%
 :align: center
 ```
