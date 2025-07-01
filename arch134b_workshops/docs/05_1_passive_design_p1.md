@@ -70,41 +70,4 @@ Clothing level = 0.5, Typical summer indoor clothing
 ```
 <br/><br/>
 
-## Changing the set point in OpenStudio
-1. In this section we will be using the shoebox model that was constructed in the [previous exercise](02_shoebox.md#shoebox-model).
-
-2. Run a simulation with the original cooling (25 degC) and heating (24 degC) setpoint schedule.
-```{image} ../_static/cmf1/cmf1_10.png
-:width: 100%
-:align: center
-```
-<br/><br/>
-
-3. From the thermal comfort model. A heating setpoint of 22degC and cooling setpoint of 28degC are sufficient for thermal comfort. Let's edit the set point schedules accordingly. Open the shoebox.osm model and go to the schedules. Select the cooling setpoint and Default schedule. Change teh set point to 28 degC as shown in the image below.
-```{image} ../_static/cmf1/cmf1_7.png
-:width: 100%
-:align: center
-```
-<br/><br/>
-
-4. Do the same for the heating setpoint schedule.
-```{image} ../_static/cmf1/cmf1_8.png
-:width: 100%
-:align: center
-```
-<br/><br/>
-
-5. Run the simulation.
-```{image} ../_static/cmf1/cmf1_9.png
-:width: 30%
-:align: center
-```
-<br/><br/>
-
-6. We can see the EUI significantly reduced by almost 11%.
-```{image} ../_static/cmf1/cmf1_11.png
-:width: 100%
-:align: center
-```
-
-7. Next lets look at how to present the results.
+## Changing the set point in Grasshopper
