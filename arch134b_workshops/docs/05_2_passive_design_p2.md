@@ -1,27 +1,29 @@
 # Passive Design and Comfort Part 2: Visualizing Thermal Comfort and Energy Reduction
 
-Set Shade geometry
+## Set Shade geometry
 ```{video} ../_static/psvdgn1/psvdgn1_1.mp4
 :width: 100%
 :align: center
 ```
 <br/><br/>
 
-Verify Shade Geometry
+<video src="../_static/psvdgn1/psvdgn1_1.mp4" width="500" controls></video>
+
+## Verify Shade Geometry
 ```{image} ../_static/psvdgn1/psvdgn1_2.png
 :width: 100%
 :align: center
 ```
 <br/><br/>
 
-Link Shades to Model
+## Link Shades to Model
 ```{image} ../_static/psvdgn1/psvdgn1_3.png
 :width: 100%
 :align: center
 ```
 <br/><br/>
 
-Add Window Border Shades
+## Add Window Border Shades
 ```{image} ../_static/psvdgn1/psvdgn1_4.png
 :width: 100%
 :align: center
