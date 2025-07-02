@@ -1,122 +1,106 @@
-# Shoebox Model-Part 1: 3D BIM
+# Weather Data Visualization with Ladybug Tools
 
-## Create slab, walls and window
-1. Model a 5m x 5m x 5m box in FreeCAD. Create a floor slab that is 5m x 5m. Draw a rectangle that is 5m x 5m. Click on the Rectangle tool on the BIM workbench (highlighted in red box below). Draw a square.
-```{image} ../_static/shoebox1/shoe1_1.png
-:width: 100%
-:align: center
-```
-<br/><br/>
-2. Select the rectangle and click on the Slab tool on the workbench. A floor slab is created.
-```{image} ../_static/shoebox1/shoe1_2.png
+This tutorial demonstrates how to use the Ladybug plugin in Grasshopper to create a dashboard of climate analysis graphics from an EPW weather file. This process is fundamental for understanding the local climate and informing early-stage design decisions.
+
+By the end of this tutorial, you will have created a set of visualizations in your Rhino viewport, which includes an hourly temperature plot, a monthly data chart, a psychrometric chart, a wind rose, and a sun path diagram for Van Nuys, California.
+
+## Open Grasshopper from Rhino by clicking the circled green icon.
+```{image} ../_static/shoebox1/shoebox1_1.png
 :width: 100%
 :align: center
 ```
 <br/><br/>
 
-3. Click on the rectangle tool and draw a rectangle on the slab. If the appropriate snaps are on your cursor will snap to the edge points of your slab. 
-```{image} ../_static/shoebox1/shoe1_20.png
+## Place your first component.
+Double click on the Grasshopper canvas to search for components. Type in "Panel". Click and drop the Panel onto the canvas. 
+
+```{image} ../_static/shoebox1/shoebox1_2.png
 :width: 100%
 :align: center
 ```
 <br/><br/>
 
-4. Select the rectangle. And change the 'Make Face' parameter to 'false'
-```{image} ../_static/shoebox1/shoe1_21.png
+## Locate your EnergyPlus Weather (epw) file in your file explorer and copy the file path as shown.
+```{image} ../_static/shoebox1/shoebox1_3.png
 :width: 100%
 :align: center
 ```
 <br/><br/>
 
-5. Select the rectangle and click on the 'Wall' icon.
-```{image} ../_static/shoebox1/shoe1_22.png
+## Plugin libraries and functions are located on the top bar. 
+This is an alternative place to drag and drop components from. 
+
+```{image} ../_static/shoebox1/shoebox1_4.png
 :width: 100%
 :align: center
 ```
 <br/><br/>
 
-6. Select the created 'Wall'. Change the 'Align' parameter to 'Right' so that the wall are within the slab.
-```{image} ../_static/shoebox1/shoe1_23.png
+## Import EPW
+Double-click the canvas and type "Import EPW". Select and place the Import EPW component onto the canvas. Click and hold the right side of the panel where the small connection tab is located to create a connection. Drag and release onto the Import EPW component connection tab to connect the components. This is the standard process of connecting components and will be referenced often throughout the modules.
+
+```{image} ../_static/shoebox1/shoebox1_5.png
 :width: 100%
 :align: center
 ```
 <br/><br/>
 
-7. Go to the Height parameter and change the height to 5000mm.
-```{image} ../_static/shoebox1/shoe1_24.png
+Notice the compontent name is located in the center of the "Import EPW" component. To the left are inputs and to the right are outputs. Required inputs are denoted by a leading underscore (example: "_epw_file"). Connections determine the "flow" of data and operations. You can right click to inspect components. This can be useful for finding "runtime errors" and figuring out the next steps to solve them.
+
+## Create Temperature and Psychometric Charts.
+Practice double-clicking the canvas, searching for components, selecting and placing them, and connecting them together to replicate the Grasshopper canvas shown below. Hover over the "_base_pt _" input and read the description to understand it's purpose. The following modules will require you to replcate block diagrams in this way.
+
+```{image} ../_static/shoebox1/shoebox1_6.png
 :width: 100%
 :align: center
 ```
 <br/><br/>
 
-8. Now draw the roof slab. Draw a rectangle on top of the four walls. Make sure your working plane is Top.
-```{image} ../_static/shoebox1/shoe1_9.png
+## Hide lines in the hourly plot
+Right click the center of the Hourly Plot component and click the option to "Hide Preview". Then connect the indicated outputs to a "Custom Preview" component. Note how this removes the grid lines from the original plot. Custom Previews can be used to modify your plots.
+
+```{image} ../_static/shoebox1/shoebox1_7.png
 :width: 100%
 :align: center
 ```
 <br/><br/>
 
-9. Click on the slab icon and make the rectangle a slab.
-```{image} ../_static/shoebox1/shoe1_10.png
+## Checking and understanding plots
+Once your components are properly connected, they will generate plots on your Rhino Canvas. It may be helpful to open a "Top" Rhino viewport and zoom out a bit to examine your plots. Double check that your three generated plots look like the plots below. If they are overlapping, revise your "_base_pt_input _"
+
+```{image} ../_static/shoebox1/shoebox1_8.png
 :width: 100%
 :align: center
 ```
 <br/><br/>
 
-10. Select the slab. Change the Predefined Type to Roof, and change the Normal Z direction to 1.00
-```{image} ../_static/shoebox1/shoe1_11.png
+The plot on top (the hourly plot) is called an 8760 model. Each pixel represents one hour of the year. The legend on the right of the plot tells us that redder colors mean warmer temperatures and bluer colors mean colder temperatures. If we read the plot, we can see that it is generally colder at night, and the hottest temperatures are in the summer afternoons. This aligns with our real-life intuition.
+
+Hover over the center of the other two plot components on your Grasshopper canvas to read about them. 
+
+## Create Wind Rose and Sun Path visualizations
+The _location input takes values from the _location output of your Inport EPW component. The _wind_direction input takes values from the _wind_direction component. The _data component takes values from the **take better picture for this**.
+
+```{image} ../_static/shoebox1/shoebox1_9.png
 :width: 100%
 :align: center
 ```
 <br/><br/>
 
-11. Create a window on the front wall. Make sure your view is adjusted to Front. Click on the window icon and place your window on the lower left corner.
-```{image} ../_static/shoebox1/shoe1_12.gif
+## Check Wind Rose plot (perspective view)
+Investigate the wind rose in relation to your home. Manipulating a "Perspective" Rhino viewport may be useful here to explore the model. A wind rose visualizes the wind speed and direction at a specific location. This plot will be revisited in a later module.
+
+```{image} ../_static/shoebox1/shoebox1_10.png
 :width: 100%
 :align: center
 ```
 <br/><br/>
 
-12. Select the window and adjust the Height and Width of the window to 1500mm.
-```{image} ../_static/shoebox1/shoe1_13.png
-:width: 100%
-:align: center
-```
-<br/><br/>
+## Check Sun Path (perspective view)
+Investigate the sun path in relation to your home. Manipulating a "Perspective" Rhino viewport may be useful here to explore the model. A sun path diagram shows the sun's path through the sky at a specific loacation. This plot will be revisited in a later module.
 
-13. Select the window, change the position x and z of the window to 1750.
-```{image} ../_static/shoebox1/shoe1_14.png
-:width: 100%
-:align: center
-```
-
-## Organize your model
-1. Now it is time to organize your model. Click on the Site, Building and Level icons to create the respective objects.
-```{image} ../_static/shoebox1/shoe1_15.png
+```{image} ../_static/shoebox1/shoebox1_11.png
 :width: 100%
 :align: center
 ```
 <br/><br/>
-2. Right click -> Level -> Move to group .... Left click on it. Move the Level to the Building object.
- ```{image} ../_static/shoebox1/shoe1_16.png
-:width: 100%
-:align: center
-```
-<br/><br/>
-3. Right click -> Building -> Move to group ... Repeat the same procedure for moving the Building into the Site object.
- ```{image} ../_static/shoebox1/shoe1_17.png
-:width: 100%
-:align: center
-```
-<br/><br/>
-4. Select the slabs and walls by Shift + Left Click. Right click -> Move to group ... Repeat the same procedure for moving the all the selected object into the Level object.
- ```{image} ../_static/shoebox1/shoe1_18.png
-:width: 100%
-:align: center
-```
-<br/><br/>
-5. This is the end of Part 1. Your model should look like this.
- ```{image} ../_static/shoebox1/shoe1_19.png
-:width: 100%
-:align: center
-```

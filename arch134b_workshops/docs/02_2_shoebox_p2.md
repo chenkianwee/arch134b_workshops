@@ -1,127 +1,115 @@
-# Shoebox Model-Part 2: Defining the Thermal Properties of the Model
+# Shoebox Model and Basic Visualizations
 
-## Create thermal spatial zone 
-1. Next we will try to draw the thermal zone for the shoebox. First hide the walls and roof of the shoebox. Shift+select all the walls and the slab as shown in the image below. Right click -> Toggle visibility. You can also use the keyboard shortcut key Space to turn on/off the visibility.
-```{image} ../_static/shoebox2/shoe2_1.png
-:width: 100%
-:align: center
-```
-<br/><br/>
-2. Draw a square on the slab. Use the 2d offset function to offset -100mm to the square. We want to create a zone that coincides with the centerline of each wall. Each wall is 200mm thick. 
-```{image} ../_static/shoebox2/shoe2_2.png
-:width: 100%
-:align: center
-```
-<br/><br/>
-3. Select the floor slab and toggle visibility (press space to toggle visibility). Click on the arrow on the offset2d and also toggle visibility of Rectangle002. Select Offset2d and adjust the z position to -100mm. The floor slab like the wall slab is also 200mm thick. For the zone to be in the centerline you need the z-position to be -100mm.
-```{image} ../_static/shoebox2/shoe2_3.png
-:width: 100%
-:align: center
-```
-<br/><br/>
-4. Select the Offset2D and click extrude. Extrude along 5200mm and click on OK.
-```{image} ../_static/shoebox2/shoe2_4.png
-:width: 100%
-:align: center
-```
-<br/><br/>
-5. Select the extrude and click on Space icon.
-```{image} ../_static/shoebox2/shoe2_5.gif
-:width: 100%
-:align: center
-```
-<br/><br/>
-6. Select the Space. In the data view, change the Ifc Type to 'Spatial Zone' and the Predefined Type to 'THERMAL'
-```{image} ../_static/shoebox2/shoe2_6.png
-:width: 100%
-:align: center
-```
-<br/><br/>
-7.Right click -> Space -> Move to group ... Move the Space into the Level object.
-```{image} ../_static/shoebox2/shoe2_7.png
-:width: 100%
-:align: center
-```
-<br/><br/>
-8.Right click -> Site -> Recompute object. Turn on the visibility of all the object. Your model should look like this
-```{image} ../_static/shoebox2/shoe2_8.png
-:width: 100%
-:align: center
-```
+## Opening your shoebox model
+Open your single_family.3dm model (located here on Github: arch134b_workshops/_downloads/single_family.3dm).
 
-## Add custom thermal psets to the objects
+Hide the three layers as shown below. Your home should now appear as a simplified box. When we learn to analyze a building, we start with the simplest form first.
 
-1. Make sure you have added the CustomPset.csv file into the FreeCAD folder. Refer to [Getting Started Steps 7-8](02_shoebox.md#freecad) for instructions.
-
-2. Click on Manage IFC Properties ... At the window choose the Order by to IFC type.
-```{image} ../_static/shoebox2/shoe2_9.png
-:width: 100%
-:align: center
-```
-<br/><br/>
-3. Select the slab object. Left click on the Add property set... parameter. Press O on the keyboard and choose 'Osmod Thermal Resistance'. Do this for the roof, floor and walls.
-- Enter the following values for the slab and walls.
-```
-Floor slab = 0.00
-Roof slab = 0.00
-Walls = 0.00
-```
-```{image} ../_static/shoebox2/shoe2_10.gif
+```{image} ../_static/shoebox2/shoebox2_1.png
 :width: 100%
 :align: center
 ```
 <br/><br/>
 
-4. Select the window object. Left click on the Add property set... parameter. Press O on the keyboard and choose 'Osmod Ufactor'.
-- Enter the following values for the window.
-```
-Window = 0.00
-```
-```{image} ../_static/shoebox2/shoe2_11.gif
+## Create a "Geometry" component 
+Double-click the canvas, type in "geometry", click to select the component, and click again on the canvas to place the component. 
+
+```{image} ../_static/shoebox2/shoebox2_2.png
 :width: 100%
 :align: center
 ```
 <br/><br/>
 
-5. Select the space object. Left click on the Add property set... parameter. Press O on the keyboard and choose 'Osmod Space'. Key in the values for the space.
-```{image} ../_static/shoebox2/shoe2_12.gif
+## Select objects
+Locate the "Zones" sub-layer within the SINGLE_ZONE layer. Right click it and click "Select Objects"
+
+```{image} ../_static/shoebox2/shoebox2_3.png
 :width: 100%
 :align: center
 ```
 <br/><br/>
 
-6. Key in the following values
-```
-FloorAreaPerPerson = 18.6
-LightingPowerPerFloorArea = 6.18
-ElectricEquipmentPowerPerFloorArea = 6.78
-OutdoorAirFlowPerFloorArea = 0.0
-```
-
-## Export to IFC
-1. Select the Site. Go to File -> Export.
-```{image} ../_static/shoebox2/shoe2_13.gif
-:width: 100%
-:align: center
-```
-<br/><br/>
-2. Check the exported file by opening it in FreeCAD again. Go to File -> Open
-```{image} ../_static/shoebox2/shoe2_14.png
-:width: 100%
-:align: center
-```
-<br/><br/>
-3. In the import window just click ok and stick with the default settings.
-```{image} ../_static/shoebox2/shoe2_15.png
-:width: 100%
-:align: center
-```
-<br/><br/>
-4. Double click on the IFC objects to fully load the properties and information of the object.
-```{image} ../_static/shoebox2/shoe2_16.png
+# Set one geometry
+Right click your geometry component and select "Set one Geometry".
+```{image} ../_static/shoebox2/shoebox2_4.png
 :width: 100%
 :align: center
 ```
 <br/><br/>
 
-5. Now that we have exported the model to IFC. We will convert the model to OpenStudio Model in part 3 of this tutorial.
+## Check if geometry is set
+If your geometry is set properly, clicking your geometry component will highlight your zone in green in Rhino. Clicking elsewhere in th canvas will highlight the zone in red. 
+
+```{image} ../_static/shoebox2/shoebox2_5.png
+:width: 100%
+:align: center
+```
+<br/><br/>
+
+## Create "Rooms Solid" Component
+Create a "Rooms Solid" component similarly to how you searched an placed the "Geometry" component earlier.
+
+```{image} ../_static/shoebox2/shoebox2_6.png
+:width: 100%
+:align: center
+```
+<br/><br/>
+
+## Set Windows and link to Aperture
+Link your windows layer to a new geomoetry component and connect it to an "Aperture" component. Continue to recreate the block diagram step-by-step by searching for components, placing, and connecting them.
+
+```{image} ../_static/shoebox2/shoebox2_7.png
+:width: 100%
+:align: center
+```
+<br/><br/>
+
+## Add Subface
+```{image} ../_static/shoebox2/shoebox2_8.png
+:width: 100%
+:align: center
+```
+<br/><br/>
+
+## Create Model
+```{image} ../_static/shoebox2/shoebox2_9.png
+:width: 100%
+:align: center
+```
+<br/><br/>
+
+## Visualize Room Attributes
+```{image} ../_static/shoebox2/shoebox2_10.png
+:width: 100%
+:align: center
+```
+<br/><br/>
+
+## Specify Legend Parameters
+The yellow box is a "Panel" component. This component can be double clicked and typed into. Alternatively, double click the canvas then type "6 and press enter. This should create the same panel as shown in the image. 
+
+```{image} ../_static/shoebox2/shoebox2_11.png
+:width: 100%
+:align: center
+```
+<br/><br/>
+
+## Check Room Attributes and Group Block
+Selected components can be grouped into a purple box with CTRL+G. To select compontents, hold SHIFT and click them. Alternatively, hold left-click and drag the generated rectangular box around the components your want to select.
+
+The ColorRoomAttributes component we created should color the floor of your shoebox model and generate a legend indicating the selected attribute and associated value. Click through several attributes in your dropdown menu component in Grasshopper and watch the generated visual change in Rhino . 
+
+```{image} ../_static/shoebox2/shoebox2_12.png
+:width: 100%
+:align: center
+```
+<br/><br/>
+
+## Check Face Attributes
+Hide the Room Attribute visualization by right clicking the component and selecting "Hide Preview". The Face Attribute visual shows useful characteristics such as the material type. It can also visualize thermal resistance (called R-values) and thermal conductance (called U values or G values). Read more here: https://en.wikipedia.org/wiki/Thermal_conductance_and_resistance
+
+```{image} ../_static/shoebox2/shoebox2_13.png
+:width: 100%
+:align: center
+```e
+<br/><br/>

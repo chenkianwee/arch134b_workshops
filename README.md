@@ -1,2 +1,5 @@
-# arch134b
-tutorials for understanding hvac performance when doing architectural design
+# Building Energy Modeling Workshops (Rhino & Ladybug Tools Edition) 2025
+tutorials for understanding hvac performance when doing architectural design 
+
+- forked from arch134b_workshops by kian wee on 6/20/2025
+- developed by Gautaman Asirwatham and Amber Sun under our advisor Professor Melody Baglione
