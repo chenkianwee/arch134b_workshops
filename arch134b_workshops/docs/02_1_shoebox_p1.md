@@ -11,7 +11,9 @@ By the end of this tutorial, you will have created a set of visualizations in yo
 ```
 <br/><br/>
 
-## Double click on the Grasshopper canvas to search for components. Type in "Panel". Click and drop the Panel onto the canvas. 
+## Place your first component.
+Double click on the Grasshopper canvas to search for components. Type in "Panel". Click and drop the Panel onto the canvas. 
+
 ```{image} ../_static/shoebox1/shoebox1_2.png
 :width: 100%
 :align: center
@@ -25,7 +27,9 @@ By the end of this tutorial, you will have created a set of visualizations in yo
 ```
 <br/><br/>
 
-## Plugin libraries and functions are loacted on the top bar. Once you are familiar, this is an alternative place to drag and drop components from. 
+## Plugin libraries and functions are located on the top bar. 
+This is an alternative place to drag and drop components from. 
+
 ```{image} ../_static/shoebox1/shoebox1_4.png
 :width: 100%
 :align: center
@@ -52,7 +56,7 @@ Practice double-clicking the canvas, searching for components, selecting and pla
 ```
 <br/><br/>
 
-## Hide Lines in the hourly plot
+## Hide lines in the hourly plot
 Right click the center of the Hourly Plot component and click the option to "Hide Preview". Then connect the indicated outputs to a "Custom Preview" component. Note how this removes the grid lines from the original plot. Custom Previews can be used to modify your plots.
 
 ```{image} ../_static/shoebox1/shoebox1_7.png
@@ -74,7 +78,7 @@ The plot on top (the hourly plot) is called an 8760 model. Each pixel represents
 
 Hover over the center of the other two plot components on your Grasshopper canvas to read about them. 
 
-## Create Wind Rose and Sun Path Visualizations
+## Create Wind Rose and Sun Path visualizations
 The _location input takes values from the _location output of your Inport EPW component. The _wind_direction input takes values from the _wind_direction component. The _data component takes values from the **take better picture for this**.
 
 ```{image} ../_static/shoebox1/shoebox1_9.png
@@ -84,7 +88,7 @@ The _location input takes values from the _location output of your Inport EPW co
 <br/><br/>
 
 ## Check Wind Rose plot (perspective view)
-Investigate the wind rose in relation to your home. Manipulating a "Perspective" Rhino viewport may be useful here to explore the model. This plot will be revisited in a later module.
+Investigate the wind rose in relation to your home. Manipulating a "Perspective" Rhino viewport may be useful here to explore the model. A wind rose visualizes the wind speed and direction at a specific location. This plot will be revisited in a later module.
 
 ```{image} ../_static/shoebox1/shoebox1_10.png
 :width: 100%
@@ -93,7 +97,7 @@ Investigate the wind rose in relation to your home. Manipulating a "Perspective"
 <br/><br/>
 
 ## Check Sun Path (perspective view)
-Investigate the sun path in relation to your home. Manipulating a "Perspective" Rhino viewport may be useful here to explore the model. This plot will be revisited in a later module.
+Investigate the sun path in relation to your home. Manipulating a "Perspective" Rhino viewport may be useful here to explore the model. A sun path diagram shows the sun's path through the sky at a specific loacation. This plot will be revisited in a later module.
 
 ```{image} ../_static/shoebox1/shoebox1_11.png
 :width: 100%
