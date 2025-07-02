@@ -1,15 +1,15 @@
 # Specifying Packaged HVAC Systems Part 1
 
 ## Get the required capacity 
+Go to the 'District Cooling Peak Demand' and 'District Heating Water Peak Demain'. Identify the highest consumption. According to the graph below, the peak demand for cooling is 3.9kW and heating is 9kW. (**update these values**)
 
-3. Go to the 'District Cooling Peak Demand' and 'District Heating Water Peak Demain'. Identify the highest consumption. According to the graph below, the peak demand for cooling is 3.9kW and heating is 9kW. 
 ```{image} ../_static/hvac1/hvac1_9.png
 :width: 100%
 :align: center
 ```
 <br/><br/>
 
-4. Convert watts to BTU/hr and ton. 
+## Convert watts to BTU/hr and ton. 
 ```
 P(BTU/hr) = 3.412141633 × P(W).
 cooling BTU/hr = 3900 W x 3.412141633 = 13307 BTU/hr = 13 kBTU/hr
