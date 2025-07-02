@@ -1,6 +1,8 @@
 # Passive Design and Comfort Part 2: Visualizing Thermal Comfort and Energy Reduction
 
 ## Set Shade geometry
+Right click the ExistingShades sub-layer and select the layer. Then, right-click the geometry component and select Set Multiple Geometries.
+
 ```{video} ../_static/psvdgn1/psvdgn1_1.mp4
 :width: 100%
 :align: center
@@ -10,6 +12,8 @@
 [![Watch the video](https://github.com/gaudi369/buildingenergymodeling_workshops/blob/main/arch134b_workshops/_static/psvdgn1/psvdgn1_2.png)](https://github.com/gaudi369/buildingenergymodeling_workshops/blob/main/arch134b_workshops/_static/psvdgn1/psvdgn1_1.mp4)
 
 ## Verify Shade Geometry
+Verify that selecting the geometry component linked to the shades hoghlights the shades in green. Clicking elsewhere in the canvas highlights the shade red. Then, hide the preview for the geometry component.
+
 ```{image} ../_static/psvdgn1/psvdgn1_2.png
 :width: 100%
 :align: center
@@ -24,55 +28,66 @@
 <br/><br/>
 
 ## Add Window Border Shades
+This models an adjustable border along the perimeter of the windows.
+
 ```{image} ../_static/psvdgn1/psvdgn1_4.png
 :width: 100%
 :align: center
 ```
 <br/><br/>
 
-Create Shy Matrix from Imported EPW Data
+## Create Sky Matrix from Imported EPW Data
 ```{image} ../_static/psvdgn1/psvdgn1_5.png
 :width: 100%
 :align: center
 ```
 <br/><br/>
 
-Set Analysis Period for Summer Design Day
+## Set Analysis Period for Summer Design Day
+June 21st is chosen as our model summer design day.
+
 ```{image} ../_static/psvdgn1/psvdgn1_6.png
 :width: 100%
 :align: center
 ```
 <br/><br/>
 
-Create Incident Radiation Visualization
+## Create Incident Radiation Visualization
 ```{image} ../_static/psvdgn1/psvdgn1_7.png
 :width: 100%
 :align: center
 ```
 <br/><br/>
 
-Reference Screenshot: Linking Geometry to the Incident Radiation Block
+## Reference Screenshot: Linking Geometry to the Incident Radiation Block
+Note the geometries are connected all the way back to the IncidentRadiation _geometry input.
+
 ```{image} ../_static/psvdgn1/psvdgn1_8.png
 :width: 100%
 :align: center
 ```
 <br/><br/>
 
-Generated Incident Radiation Visualization in Rhino
+## Generated Incident Radiation Visualization in Rhino
+This shows how much sunlight hits each part of the model's surface. Use a perspective view to explore the visualization. What do you notice?
+**need to fix bug that shows part of the roof as not having incident radiation**
+
 ```{image} ../_static/psvdgn1/psvdgn1_9.png
 :width: 100%
 :align: center
 ```
 <br/><br/>
 
-Create Radiation Dome Visualization
+## Create Radiation Dome Visualization
 ```{image} ../_static/psvdgn1/psvdgn1_10.png
 :width: 100%
 :align: center
 ```
 <br/><br/>
 
-Generated Radiation Dome Visualization in Rhino
+## Generated Radiation Dome Visualization in Rhino
+This shows the apparent sunlight hitting our location from the sky. Notice it is not exactly symmetrical. 
+
 ```{image} ../_static/psvdgn1/psvdgn1_11.png
 :width: 100%
 :align: center
