@@ -7,7 +7,7 @@
 ```
 <br/><br/>
 
-<video src="../_static/psvdgn1/psvdgn1_1.mp4" width="500" controls></video>
+[![Watch the video](https://github.com/gaudi369/buildingenergymodeling_workshops/blob/main/arch134b_workshops/_static/psvdgn1/psvdgn1_2.png)](https://github.com/gaudi369/buildingenergymodeling_workshops/blob/main/arch134b_workshops/_static/psvdgn1/psvdgn1_1.mp4)
 
 ## Verify Shade Geometry
 ```{image} ../_static/psvdgn1/psvdgn1_2.png
