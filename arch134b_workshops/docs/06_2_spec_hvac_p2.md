@@ -1,4 +1,4 @@
-# Specifying Packaged HVAC Systems Part 1
+# Specifying Packaged HVAC Systems
 
 ## Visualize the results
 1. Download the visualization .svg template from <a href="https://github.com/chenkianwee/ifc2osmod_gendgn_egs/blob/main/svg/viz_template_spec.svg" target="_blank">here</a>.
