@@ -1,4 +1,4 @@
-# Specifying Packaged HVAC Systems Part 1
+# Specifying Packaged HVAC Systems
 
 ## Get the required capacity 
 Go to the 'District Cooling Peak Demand' and 'District Heating Water Peak Demain'. Identify the highest consumption. According to the graph below, the peak demand for cooling is 3.9kW and heating is 9kW. (**update these values**)
