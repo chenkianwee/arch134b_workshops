@@ -1,6 +1,5 @@
-# Specifying Packaged HVAC Systems
+# Visualize the results
 
-## Visualize the results
 1. Download the visualization .svg template from <a href="https://github.com/chenkianwee/ifc2osmod_gendgn_egs/blob/main/svg/viz_template_spec.svg" target="_blank">here</a>.
 
 2. Follow the instructions from [this section on opening .svg template](01_2_climate_p2.md#download-the-visualization-template).
