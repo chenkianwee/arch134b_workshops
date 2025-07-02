@@ -6,28 +6,12 @@ A shoebox model is a simplified, usually rectangular building used for pre-desig
 1. Install Rhino8 with Grasshopper: <a href="https://www.rhino3d.com/download/" target="_blank">here</a>
 
 ## Case Study Files
-Download the single family home Rhino model here:
-<a href="buildingenergymodeling_workshops/arch134b_workshops/_downloads/single_family.3dm" download>single_family.3dm</a>
+Download the single family home Rhino model from the github: <a href="https://github.com/gaudi369/buildingenergymodeling_workshops/blob/main/arch134b_workshops/_downloads/single_family.3dm" target="_blank">here</a>
 
-Download the weather files here:
-<a href="buildingenergymodeling_workshops/arch134b_workshops/_downloads/single_family.3dm" download>USA_CA_Van.Nuys.AP.722886_TMYx</a>
-
-## Case Study Files
-Download the single family home Rhino model here:
-<a href="arch134b_workshops/_downloads/single_family.3dm" download>single_family.3dm</a>
-
-Download the weather files here:
-<a href="arch134b_workshops/_downloads/single_family.3dm" download>USA_CA_Van.Nuys.AP.722886_TMYx</a>
-
-## Case Study Files
-Download the single family home Rhino model here:
-<a href="../_downloads/single_family.3dm" download>single_family.3dm</a>
-
-Download the weather files here:
-<a href="../_downloads/USA_CA_Van.Nuys.AP.722886_TMYx" download>USA_CA_Van.Nuys.AP.722886_TMYx</a>
+Download the weather files folder from Github: <a href="https://github.com/gaudi369/buildingenergymodeling_workshops/tree/main/arch134b_workshops/_downloads/USA_CA_Van.Nuys.AP.722886_TMYx" target="_blank">here</a>
      
 ## Pollination Grasshopper Plugin for simulation 
-2. Install <a href="https://app.pollination.solutions/cad-plugins" target="_blank">here</a>
+2. Install Pollination for Grasshopper: <a href="https://app.pollination.solutions/cad-plugins" target="_blank">here</a>
 
 ## Inkscape for visualization
 3. Install Inkscape==1.4 <a href="https://inkscape.org/release/inkscape-1.4/" target="_blank">here</a> for graphics editing.
