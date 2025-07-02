@@ -7,24 +7,38 @@ A shoebox model is a simplified, usually rectangular building used for pre-desig
 
 ## Case Study Files
 Download the single family home Rhino model here:
-<a href="buildingenergymodeling_workshops/arch134b_workshops/_downloads/single_family.3dm" download>single_family.3dm</a>
+<a href=".../buildingenergymodeling_workshops/arch134b_workshops/_downloads/single_family.3dm" download>single_family.3dm</a>
 
 Download the weather files here:
 <a href="buildingenergymodeling_workshops/arch134b_workshops/_downloads/single_family.3dm" download>USA_CA_Van.Nuys.AP.722886_TMYx</a>
 
 ## Case Study Files
 Download the single family home Rhino model here:
-<a href="arch134b_workshops/_downloads/single_family.3dm" download>single_family.3dm</a>
+<a href="../buildingenergymodeling_workshops/arch134b_workshops/_downloads/single_family.3dm" download>single_family.3dm</a>
 
 Download the weather files here:
-<a href="arch134b_workshops/_downloads/single_family.3dm" download>USA_CA_Van.Nuys.AP.722886_TMYx</a>
+<a href="buildingenergymodeling_workshops/arch134b_workshops/_downloads/single_family.3dm" download>USA_CA_Van.Nuys.AP.722886_TMYx</a>
 
 ## Case Study Files
 Download the single family home Rhino model here:
-<a href="../_downloads/single_family.3dm" download>single_family.3dm</a>
+<a href="./buildingenergymodeling_workshops/arch134b_workshops/_downloads/single_family.3dm" download>single_family.3dm</a>
 
 Download the weather files here:
-<a href="../_downloads/USA_CA_Van.Nuys.AP.722886_TMYx" download>USA_CA_Van.Nuys.AP.722886_TMYx</a>
+<a href="./buildingenergymodeling_workshops/arch134b_workshops/_downloads/single_family.3dm" download>USA_CA_Van.Nuys.AP.722886_TMYx</a>
+
+## Case Study Files
+Download the single family home Rhino model here:
+<a href="./arch134b_workshops/_downloads/single_family.3dm" download>single_family.3dm</a>
+
+Download the weather files here:
+<a href="./arch134b_workshops/_downloads/single_family.3dm" download>USA_CA_Van.Nuys.AP.722886_TMYx</a>
+
+## Case Study Files
+Download the single family home Rhino model here:
+<a href="./_downloads/single_family.3dm" download>single_family.3dm</a>
+
+Download the weather files here:
+<a href="./_downloads/USA_CA_Van.Nuys.AP.722886_TMYx" download>USA_CA_Van.Nuys.AP.722886_TMYx</a>
      
 ## Pollination Grasshopper Plugin for simulation 
 2. Install <a href="https://app.pollination.solutions/cad-plugins" target="_blank">here</a>
