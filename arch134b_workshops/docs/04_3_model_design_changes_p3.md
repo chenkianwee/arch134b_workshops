@@ -1,5 +1,5 @@
 # Visualize your Results
 
-[placeholder]
+placeholder
 
 7/6/25
