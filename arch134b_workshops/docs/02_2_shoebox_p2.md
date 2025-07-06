@@ -40,7 +40,7 @@ Right click your geometry component and select "Set one Geometry".
 <br/><br/>
 
 ## Check if geometry is set
-If your geometry is set properly, clicking your geometry component will highlight your zone in green in Rhino. Clicking elsewhere in th canvas will highlight the zone in red. 
+If your geometry is set properly, clicking your geometry component will highlight your zone in green in Rhino. Clicking elsewhere in the canvas will highlight the zone in red. 
 
 ```{image} ../_static/shoebox2/shoebox2_5.png
 :width: 100%
@@ -49,7 +49,7 @@ If your geometry is set properly, clicking your geometry component will highligh
 <br/><br/>
 
 ## Create "Rooms Solid" Component
-Create a "Rooms Solid" component similarly to how you searched an placed the "Geometry" component earlier.
+Create a "Rooms Solid" component similarly to how you searched an placed the "Geometry" component earlier. Connect your Geometry to the _geo input.
 
 ```{image} ../_static/shoebox2/shoebox2_6.png
 :width: 100%
