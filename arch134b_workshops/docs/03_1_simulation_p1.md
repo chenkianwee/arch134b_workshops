@@ -69,12 +69,21 @@ Also connect the dry_bulb_temperature output of your ImportEPW component to the 
 ```
 <br/><br/>
 
+## Double-check Canvas
+This is what your plot generation logic should look like.
+
+```{image} ../_static/sim1/sim1_9.png
+:width: 100%
+:align: center
+```
+<br/><br/>
+
 ## Monthly Heating and Cooling Loads Plot with Temperature
-This is what your second generated plot should look like. It shows temperature vs heating and cooling loads for each month. We have higher heating loads in the winter and higher cooling loads in the summer. 
+This is what your second and third generated plots should look like. The top shows average daily temperatures by month. The bottom shows heating and cooling loads for each month. We have higher heating loads in the winter and higher cooling loads in the summer. 
 
 Consider the results. Does this align with what you would expect?
 
-```{image} ../_static/sim1/sim1_9.png
+```{image} ../_static/sim1/sim1_10.png
 :width: 100%
 :align: center
 ```
@@ -83,9 +92,15 @@ Consider the results. Does this align with what you would expect?
 ## Finding Construction and Program Sets
 Explore the drop down menus to find an appropriate construction set. For our case study, we are in Van Nuys, California which is in Climate Zone 3 (**add reference**). We can choose a newer vintage to start, assuming the home was built recently.
 
-**Take a better screenshot for this. Include the panel in Honeybee wher you can drag and drop all these components.**
+```{image} ../_static/sim1/sim1_11.png
+:width: 100%
+:align: center
+```
+<br/><br/>
 
-```{image} ../_static/sim1/sim1_10.png
+Here is another reference image including the HB panel where you can drag and drop many of these components from.
+
+```{image} ../_static/sim1/sim1_12.png
 :width: 100%
 :align: center
 ```
@@ -94,7 +109,7 @@ Explore the drop down menus to find an appropriate construction set. For our cas
 ## Connect Sets to Room Definition
 We can copy and paste the program and construction set values into a panel for accesibility. Then we can connect these panels to our main workflows. This leaves, the drop down menus free to explore without triggering a new simulation accidentally.
 
-```{image} ../_static/sim1/sim1_11.png
+```{image} ../_static/sim1/sim1_13.png
 :width: 100%
 :align: center
 ```
@@ -103,7 +118,7 @@ We can copy and paste the program and construction set values into a panel for a
 ## Compare EUI by Source for Different Vintages
 Try recording your simulation EUI with your vintage of choice in a menu. Then change the vintage, ensuring these sets are reflected in the panels attatched  to your main workflow. Compare the EUI side by side. Do your results align with your expectations? 
 
-```{image} ../_static/sim1/sim1_12.png
+```{image} ../_static/sim1/sim1_14.png
 :width: 100%
 :align: center
 ```
