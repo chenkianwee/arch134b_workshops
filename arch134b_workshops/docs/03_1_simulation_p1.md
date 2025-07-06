@@ -60,8 +60,8 @@ The "TimeOp" component takes both heating and cooling data from EnergyResult as 
 ```
 <br/><br/>
 
-## Connect Dry Bulb Temp to Data
-Also connect the dry_bulb_temperature output of your ImportEPW component to the _data input of your TimeOp component.
+## Dry Bulb Temp Visualization
+Create a new monthly chart with an appropriate base_pt _. Connect the dry_bulb_temperature output of your ImportEPW component to the _data input of your new monthly chart. Another view of this configuration is shown in the next image.
 
 ```{image} ../_static/sim1/sim1_8.png
 :width: 100%
