@@ -58,7 +58,7 @@ Create a "Rooms Solid" component similarly to how you searched an placed the "Ge
 <br/><br/>
 
 ## Set Windows and link to Aperture
-Link your windows layer to a new geomoetry component and connect it to an "Aperture" component. Continue to recreate the block diagram step-by-step by searching for components, placing, and connecting them.
+Link your windows layer to a new geomoetry component and connect it to an "Aperture" component.
 
 ```{image} ../_static/shoebox2/shoebox2_7.png
 :width: 100%
@@ -67,6 +67,8 @@ Link your windows layer to a new geomoetry component and connect it to an "Apert
 <br/><br/>
 
 ## Add Subface
+Create the 'AddSubface' component. Connect rooms -> hb_obj and apertures -> '_sub_faces' as shown.
+
 ```{image} ../_static/shoebox2/shoebox2_8.png
 :width: 100%
 :align: center
@@ -74,6 +76,8 @@ Link your windows layer to a new geomoetry component and connect it to an "Apert
 <br/><br/>
 
 ## Create Model
+Create the Model component, then connect hb_obj -> rooms_ as shown.
+
 ```{image} ../_static/shoebox2/shoebox2_9.png
 :width: 100%
 :align: center
@@ -81,6 +85,8 @@ Link your windows layer to a new geomoetry component and connect it to an "Apert
 <br/><br/>
 
 ## Visualize Room Attributes
+Continue to recreate the block diagram step-by-step by searching for components, placing, and connecting them.
+
 ```{image} ../_static/shoebox2/shoebox2_10.png
 :width: 100%
 :align: center
