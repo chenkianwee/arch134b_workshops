@@ -9,5 +9,6 @@ Weather data are most commonly stored as .epw files. There are other formats suc
 
 In this tutorial, we will use the weather files from climate.onebuilding.org as they are more up to date.
 
-## GIMP and Inkscape for visualization
-1. Install Inkscape==1.4 <a href="https://inkscape.org/release/inkscape-1.4/" target="_blank">here</a> for doing vector illustration and Gimp==3.0.0 <a href="https://www.gimp.org/downloads/" target="_blank">here</a> for working with raster images.
+## Inkscape for visualization (optional)
+1. Install Inkscape==1.4 <a href="https://inkscape.org/release/inkscape-1.4/" target="_blank">here</a> for doing vector illustration.
+2. Otherwise use Adobe Suite if familiar.
