@@ -2,6 +2,7 @@
 
 ## Opening your shoebox model
 Download the single family home Rhino model from Github: <a href="https://github.com/gaudi369/buildingenergymodeling_workshops/blob/main/arch134b_workshops/_downloads/single_family.3dm" target="_blank">here</a>
+
 Open your single_family.3dm model. 
 
 Hide the three layers as shown below. Your home should now appear as a simplified box. When we learn to analyze a building, we start with the simplest form first.
