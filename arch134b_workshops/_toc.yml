@@ -24,6 +24,7 @@ parts:
     sections:
     - file: docs/04_1_model_design_changes_p1
     - file: docs/04_2_model_design_changes_p2
+    - file: docs/04_3_model_design_changes_p3
   - file: docs/05_passive_design
     sections:
     - file: docs/05_1_passive_design_p1
