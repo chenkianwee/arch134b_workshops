@@ -21,6 +21,8 @@ Double click on the Grasshopper canvas to search for components. Type in "Panel"
 <br/><br/>
 
 ## Locate your EnergyPlus Weather (epw) file in your file explorer and copy the file path as shown.
+Right click to open panel, then select "Copy as path".
+
 ```{image} ../_static/shoebox1/shoebox1_3.png
 :width: 100%
 :align: center

@@ -1,7 +1,9 @@
 # Shoebox Model and Basic Visualizations
 
 ## Opening your shoebox model
-Open your single_family.3dm model (located here on Github: arch134b_workshops/_downloads/single_family.3dm).
+Download the single family home Rhino model from Github: <a href="https://github.com/gaudi369/buildingenergymodeling_workshops/blob/main/arch134b_workshops/_downloads/single_family.3dm" target="_blank">here</a>
+
+Open your single_family.3dm model. 
 
 Hide the three layers as shown below. Your home should now appear as a simplified box. When we learn to analyze a building, we start with the simplest form first.
 
@@ -38,7 +40,7 @@ Right click your geometry component and select "Set one Geometry".
 <br/><br/>
 
 ## Check if geometry is set
-If your geometry is set properly, clicking your geometry component will highlight your zone in green in Rhino. Clicking elsewhere in th canvas will highlight the zone in red. 
+If your geometry is set properly, clicking your geometry component will highlight your zone in green in Rhino. Clicking elsewhere in the canvas will highlight the zone in red. 
 
 ```{image} ../_static/shoebox2/shoebox2_5.png
 :width: 100%
@@ -47,7 +49,7 @@ If your geometry is set properly, clicking your geometry component will highligh
 <br/><br/>
 
 ## Create "Rooms Solid" Component
-Create a "Rooms Solid" component similarly to how you searched an placed the "Geometry" component earlier.
+Create a "Rooms Solid" component similarly to how you searched an placed the "Geometry" component earlier. Connect your Geometry to the _geo input.
 
 ```{image} ../_static/shoebox2/shoebox2_6.png
 :width: 100%
@@ -56,7 +58,7 @@ Create a "Rooms Solid" component similarly to how you searched an placed the "Ge
 <br/><br/>
 
 ## Set Windows and link to Aperture
-Link your windows layer to a new geomoetry component and connect it to an "Aperture" component. Continue to recreate the block diagram step-by-step by searching for components, placing, and connecting them.
+Link your windows layer to a new geomoetry component and connect it to an "Aperture" component.
 
 ```{image} ../_static/shoebox2/shoebox2_7.png
 :width: 100%
@@ -65,6 +67,8 @@ Link your windows layer to a new geomoetry component and connect it to an "Apert
 <br/><br/>
 
 ## Add Subface
+Create the 'AddSubface' component. Connect rooms -> hb_obj and apertures -> '_sub_faces' as shown.
+
 ```{image} ../_static/shoebox2/shoebox2_8.png
 :width: 100%
 :align: center
@@ -72,6 +76,8 @@ Link your windows layer to a new geomoetry component and connect it to an "Apert
 <br/><br/>
 
 ## Create Model
+Create the Model component, then connect hb_obj -> rooms_ as shown.
+
 ```{image} ../_static/shoebox2/shoebox2_9.png
 :width: 100%
 :align: center
@@ -79,6 +85,8 @@ Link your windows layer to a new geomoetry component and connect it to an "Apert
 <br/><br/>
 
 ## Visualize Room Attributes
+Continue to recreate the block diagram step-by-step by searching for components, placing, and connecting them.
+
 ```{image} ../_static/shoebox2/shoebox2_10.png
 :width: 100%
 :align: center
