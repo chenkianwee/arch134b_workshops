@@ -5,17 +5,25 @@ tutorials for understanding hvac performance when doing architectural design
 - developed by Gautaman Asirwatham and Amber Sun under our advisor Professor Melody Baglione
 
 ## Tooling Details
-**Core Simulation Engines**
+
+**Core Simulation Engines:**
+
 Energy Plus: thermal and energy modeling
+
 Radiance: lighting
 
-**Environment / Connectors**
+**Environment / Connectors:**
+
 OpenStudio: alt frontend - Connects Pollination
+
 Rhino 8 w/ Grasshopper: 3D modeling
+
 Pollination: analysis suite (Rhino/Grasshopper Plugin)
 
-**Other**
+**Other:**
+
 VSCode: code editor
+
 Inkscape: graphics editor
 
 **Dependencies and Installation Notes:**
@@ -32,8 +40,10 @@ EnergyPlus and OpenStudio are common dependancies for energy simulation and were
 ### Other Tools for future work
 
 OpenFoam: fluid dynamics
+
 Eddy 3D: Airflow analysis (Rhino/Grasshopper Plugin)
 
 REopt: energy gen system sizing
+
 System Advisor Model: system analysis
 
