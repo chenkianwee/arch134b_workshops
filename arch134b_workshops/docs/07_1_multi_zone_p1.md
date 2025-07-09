@@ -22,4 +22,11 @@ The zones referenced in the Brep will show up red. Check if the Brep is set by c
 ```
 <br/><br/>
 
-Connect the Brep to a new component called "HB Intersect Solids." For multi-zone/room energy models, this is a must have. It takes in a list of HB Rooms closed Breps (polysurfaces) and recognizes 
+Connect the Brep to a new component called "HB Intersect Solids." For multi-zone/room energy models, this is a must have. It takes in a list of HB Rooms closed Breps (polysurfaces) and recognizes any and all shared faces between the rooms. Attach a "Boolean Toggle" as a way to run the component. Set to True. Turn the preview off on "IntSolid" for better visualization in the next steps.
+```{image} ../_static/multizone/multizone2_4.png
+:width: 100%
+:align: center
+```
+<br/><br/>
+
+Bring up "List Item" and "Number Slider." Select both to copy and paste another set. 
