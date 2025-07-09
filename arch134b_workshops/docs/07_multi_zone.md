@@ -10,7 +10,7 @@ Check the reference image for what this should look like:
 ```
 <br/><br/>
 
-This should be your Grasshopper after completing module 6. In module 7, we will be getting a feel of multi-zone energy modeling by adding another room/zone: a garage.
+This should be your Grasshopper after completing module 6. In module 7, we will be getting a feel of multi-zone energy modeling by adding another room/zone: a garage. Starting with defining our multi-zone geometries...
 ```{image} ../_static/multizone/multizone1_3.png
 :width: 100%
 :align: center
