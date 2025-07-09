@@ -18,8 +18,5 @@ This should be your Grasshopper after completing module 6. In module 7, we will 
 ```
 <br/><br/>
 
-To start, delete the Geometry component connected to HB RoomSolid as shown below.  
+To start, delete the Geometry component that is connected to HB RoomSolid as shown below
 ```{image} ../_static/multizone/multizone1_3.png
-:width: 100%
-:align: center
-```
