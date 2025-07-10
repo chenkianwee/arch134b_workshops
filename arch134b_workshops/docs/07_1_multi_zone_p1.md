@@ -29,4 +29,16 @@ Connect the Brep to a new component called "HB Intersect Solids." For multi-zone
 ```
 <br/><br/>
 
-Bring up "List Item" and "Number Slider." Select both to copy and paste another set. 
+Bring up a "List Item" and "Number Slider." Select both to copy and paste another set. 
+```{image} ../_static/multizone/multizone2_5.png
+:width: 100%
+:align: center
+```
+<br/><br/>
+
+Right-click on the slider and set the slider type to Integers. The values of the slider can be adjusted using the min and max. In this case, the sliders are used to choose between multiple rooms. This model contains a house and a garage so the default 0 and 1 is okay. For models with more than 2 rooms, adjust the bounds accordingly. Do the same for the other set.
+```{image} ../_static/multizone/multizone2_5.3.png
+:width: 100%
+:align: center
+```
+<br/><br/>
