@@ -42,3 +42,24 @@ Right-click on the slider and set the slider type to Integers. The values of the
 :align: center
 ```
 <br/><br/>
+
+Connect the Index to the “i” input of the Item component. Slide the Index to 0. Do the same to the other set but slide to 1. These represent the two different rooms in the Rhino model. Then, wire the IntSolid’s output “int_rooms” to the “L” inputs of the two Item’s. To wire from the same output, hold down Shift key and drag to the input.
+```{image} ../_static/multizone/multizone2_6.png
+:width: 100%
+:align: center
+```
+<br/><br/>
+
+Check if the rooms/zones are properly defined by clicking on each Item. The output of the Item is a Brep or a geometry which can be connected to other components’ inputs. Wire the Brep of the house to the _geometry input of "Incident Radiation" as shown in 
+```{image} ../_static/multizone/multizone2_7.2.png
+:width: 100%
+:align: center
+```
+<br/><br/>
+
+Connect the House Brep (Top Item) back to the HB RoomSolid from earlier. Remember the hold down Shift key when wiring from the same output. It is also a good habit to name the room because complex models will have multiple different rooms for different purposes.
+```{image} ../_static/multizone/multizone2_8.png
+:width: 100%
+:align: center
+```
+<br/><br/>
