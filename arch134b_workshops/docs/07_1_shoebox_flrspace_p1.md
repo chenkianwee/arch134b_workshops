@@ -1,5 +1,6 @@
 # Shoebox Model with OpenStudio-Part 1: Building the 3D Model
 
+## Creating the 3D model
 1. Model a 5mx5mx5m shoebox in OpenStudio. In OpenStudio go to the 'Geometry' Tab. In the Geometry window click on the 'Editor' tab. Then click on 'New'
 ```{image} ../_static/shoebox_flrspace1/shoebox_flrspace1_1.png
 :width: 100%

@@ -21,6 +21,8 @@ parts:
   - file: docs/07_shoebox_flrspace
     sections:
     - file: docs/07_1_shoebox_flrspace_p1
+    - file: docs/07_2_shoebox_flrspace_p2
+    - file: docs/07_3_shoebox_flrspace_p3
   - file: docs/03_cmf
     sections:
     - file: docs/03_1_cmf_p1
