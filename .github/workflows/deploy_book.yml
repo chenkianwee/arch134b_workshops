@@ -27,11 +27,11 @@ jobs:
     - name: Set up Python 3.12
       uses: actions/setup-python@v5
       with:
-        python-version: '3.11'
+        python-version: '3.12'
         cache: pip # Implicitly uses requirements.txt for cache key
 
     - name: Install dependencies
-      run: pip install -r cheatsheet/requirements.txt
+      run: pip install -r arch134b_workshops/requirements.txt
 
     # (optional) Cache your executed notebooks between runs
     # if you have config:
@@ -46,13 +46,13 @@ jobs:
     # Build the book
     - name: Build the book
       run: |
-        jupyter-book build cheatsheet/
+        jupyter-book build arch134b_workshops/
 
     # Upload the book's HTML as an artifact
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
       with:
-        path: "cheatsheet/_build/html"
+        path: "arch134b_workshops/_build/html"
 
     # Deploy the book's HTML to GitHub Pages
     - name: Deploy to GitHub Pages
