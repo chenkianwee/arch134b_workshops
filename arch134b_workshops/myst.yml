@@ -1,0 +1,51 @@
+version: 1
+project:
+  title: Arch134b workshops
+  authors:
+    - name: Kian Wee Chen
+  copyright: '2024'
+  github: chenkianwee/pbad
+  exports:
+    - format: pdf
+      template: plain_latex_book
+      output: exports/book.pdf
+  toc:
+    - file: docs/intro.md
+    - title: Tutorials
+      children:
+        - file: docs/01_climate.md
+          children:
+            - file: docs/01_1_climate_p1.md
+            - file: docs/01_2_climate_p2.md
+        - file: docs/02_shoebox.md
+          children:
+            - file: docs/02_1_shoebox_p1.md
+            - file: docs/02_2_shoebox_p2.md
+            - file: docs/02_3_shoebox_p3.md
+            - file: docs/02_4_shoebox_p4.md
+            - file: docs/02_5_shoebox_p5.md
+        - file: docs/07_shoebox_flrspace.md
+          children:
+            - file: docs/07_1_shoebox_flrspace_p1.md
+            - file: docs/07_2_shoebox_flrspace_p2.md
+            - file: docs/07_3_shoebox_flrspace_p3.md
+        - file: docs/03_cmf.md
+          children:
+            - file: docs/03_1_cmf_p1.md
+            - file: docs/03_2_cmf_p2.md
+        - file: docs/04_psvdgn.md
+          children:
+            - file: docs/04_1_psvdgn_p1.md
+            - file: docs/04_2_psvdgn_p2.md
+        - file: docs/05_hvac.md
+          children:
+            - file: docs/05_1_hvac_p1.md
+            - file: docs/05_2_hvac_p2.md
+        - file: docs/06_spec_hvac.md
+          children:
+            - file: docs/06_1_spec_hvac_p1.md
+            - file: docs/06_2_spec_hvac_p2.md
+site:
+  options:
+    folders: true
+  template: book-theme
